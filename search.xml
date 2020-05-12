@@ -1,22 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Markdown 写作</title>
-    <url>/2020/05/11/test/</url>
-    <content><![CDATA[<h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><p>我的第一个博客</p>
-<a id="more"></a>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span><span class="params">()</span>:</span></span><br><span class="line">        print(<span class="string">"机会总是留给与准备的人。"</span>)  <span class="comment"># 人生格言!</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> __name__==<span class="string">'__main__'</span>:</span><br><span class="line">        main()</span><br></pre></td></tr></table></figure>
-<h2 id="数学公式"><a href="#数学公式" class="headerlink" title="数学公式"></a>数学公式</h2><p>行内公式 $a = b + c$.</p>
-<p>行间公式</p>
-<script type="math/tex; mode=display">e^{i\pi}+1=0.</script>]]></content>
-      <categories>
-        <category>Markdown</category>
-      </categories>
-      <tags>
-        <tag>test</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Markdown基础</title>
     <url>/2020/05/12/Markdown%E5%9F%BA%E7%A1%80/</url>
     <content><![CDATA[<p>附 本文的Markdown源码:<br><a href="https://github.com/johnhu94/Markdown" target="_blank" rel="noopener" title="Markdown基础整理. Contribute to johnhu94/Markdown development by creating an account on GitHub.">GitHub - johnhu94/Markdown: Markdown基础整理</a><br>点击”Raw”可看到源码，欢迎fork或star~</p>
@@ -154,6 +138,22 @@
       </categories>
       <tags>
         <tag>skills</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Markdown 写作</title>
+    <url>/2020/05/11/test/</url>
+    <content><![CDATA[<h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><p>我的第一个博客</p>
+<a id="more"></a>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span><span class="params">()</span>:</span></span><br><span class="line">        print(<span class="string">"机会总是留给与准备的人。"</span>)  <span class="comment"># 人生格言!</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> __name__==<span class="string">'__main__'</span>:</span><br><span class="line">        main()</span><br></pre></td></tr></table></figure>
+<h2 id="数学公式"><a href="#数学公式" class="headerlink" title="数学公式"></a>数学公式</h2><p>行内公式 $a = b + c$.</p>
+<p>行间公式</p>
+<script type="math/tex; mode=display">e^{i\pi}+1=0.</script>]]></content>
+      <categories>
+        <category>Markdown</category>
+      </categories>
+      <tags>
+        <tag>test</tag>
       </tags>
   </entry>
 </search>
