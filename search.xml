@@ -1,6 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>John Hu</title>
+    <url>/2020/05/13/hello-world/</url>
+    <content><![CDATA[<p><font size=10,font size=10font face="微软雅黑"><center>Stay Hungry, Stay Foolish.</center></font><br><img src="https://i.loli.net/2020/05/11/68yBVY5EvjHermK.png" alt="First.png"></p>
+]]></content>
+      <categories>
+        <category>Markdown</category>
+      </categories>
+      <tags>
+        <tag>skills</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Markdown 写作</title>
+    <url>/2020/05/11/test/</url>
+    <content><![CDATA[<h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><p>markdown 写作实例</p>
+<a id="more"></a>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span><span class="params">()</span>:</span></span><br><span class="line">        print(<span class="string">"机会总是留给有准备的人。"</span>)  <span class="comment"># 人生格言!</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> __name__==<span class="string">'__main__'</span>:</span><br><span class="line">        main()</span><br></pre></td></tr></table></figure>
+<h2 id="数学公式"><a href="#数学公式" class="headerlink" title="数学公式"></a>数学公式</h2><p>行内公式 $a = b + c$.</p>
+<p>行间公式</p>
+<script type="math/tex; mode=display">e^{i\pi}+1=0.</script>]]></content>
+      <categories>
+        <category>Markdown</category>
+      </categories>
+      <tags>
+        <tag>test</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>私藏的2000G课程</title>
+    <url>/2020/05/13/%E5%88%86%E4%BA%AB/</url>
+    <content><![CDATA[<h1 id="私藏的2000G课程，买不到那种"><a href="#私藏的2000G课程，买不到那种" class="headerlink" title="私藏的2000G课程，买不到那种"></a>私藏的2000G课程，买不到那种</h1><p><img src="https://i.loli.net/2020/05/13/RTixXhmyQYMdJe6.jpg" alt="fx01.jpg" style="zoom:33%;" /></p>
+<p>​         本次分享的资源较多，都是小胡同学这几年来的收藏，精挑细选的优质课程，大概可以分为三类。</p>
+<ul>
+<li><p>一是考试类。如专四专八，四六级、教师资格证、教师招聘、初级会计、公务员考试等。</p>
+</li>
+<li><p>二是学习类。这部分则各平台销量排前，颇受大众欢迎的一些课程。</p>
+</li>
+<li><p>三是技能类。技能教学类课程，比如PR、PS、UI设计、手机摄影、单反摄影、office办公等。</p>
+</li>
+</ul>
+<p>​        本次课程大小约2000G，如果你有需要，可以根据文末的步骤领取。以下为部分资源预览，课程永久有效并会继续增加。</p>
+<a id="more"></a>
+<h2 id="考试类"><a href="#考试类" class="headerlink" title="考试类"></a>考试类</h2><p><img src="https://i.loli.net/2020/05/13/wPp3UW7eTHZfqrt.png" alt="fx02.png" style="zoom:80%;" /></p>
+<p>课程名称：《公务员考试》</p>
+<p>官方售价：<strong>¥5998</strong></p>
+<p>课程介绍：国考+联考，笔试+面试，粉笔、华图等机构课程。</p>
+<p><img src="https://i.loli.net/2020/05/13/PJRmKqy5eF79N6L.png" alt="fx03.png" style="zoom:67%;" /></p>
+<p>课程名称：《四六级》</p>
+<p>官方售价：<strong>¥不知道</strong></p>
+<p>课程介绍：四六级、四家机构，应该够用了。</p>
+<p><img src="https://i.loli.net/2020/05/13/DzqtHsYFEjSgM3r.png" alt="fx04.png" style="zoom:67%;" /></p>
+<p>课程名称：《专四专八》</p>
+<p>官方售价：<strong>¥不知道</strong></p>
+<p>课程介绍：英语专业老姐那里要来的</p>
+<p><img src="https://i.loli.net/2020/05/13/nLtxhZFMoGqQd1K.png" alt="fx05.png" style="zoom:80%;" /></p>
+<p>课程名称：《教师资格证》</p>
+<p>官方售价：<strong>¥3580</strong></p>
+<p>课程介绍：笔试+面试，认真备考，这套课程足矣。</p>
+<p><img src="https://i.loli.net/2020/05/13/uH7p6RD1Jagfdrk.png" alt="fx06.png" style="zoom:67%;" /></p>
+<p>课程名称：《初级会计》</p>
+<p>官方售价：<strong>¥399</strong></p>
+<p>课程介绍：实务+经济法，东奥、斯尔的课程。</p>
+<h2 id="学习类"><a href="#学习类" class="headerlink" title="学习类"></a>学习类</h2><p>课程名称：《基金生财一课通》</p>
+<p>官方售价：<strong>¥299</strong></p>
+<p>课程介绍：适合小白的理财课。</p>
+<p>课程名称：《简七理财课》</p>
+<p>官方售价：<strong>¥99</strong></p>
+<p>课程介绍：通俗易懂的理财课。</p>
+<p>课程名称：《蒋勋细说红楼》</p>
+<p>官方售价：<strong>¥199</strong></p>
+<p>课程介绍：美学大师蒋勋解读红楼梦，看不一样的大观园。</p>
+<p>课程名称：《薛兆丰经济学》</p>
+<p>官方售价：<strong>¥199</strong></p>
+<p>课程介绍：那个在奇葩说讲冷笑话的薛兆丰，通俗易懂又直透本质的经济学课。</p>
+<p>课程名称：《任志强商学课》</p>
+<p>官方售价：<strong>¥99</strong></p>
+<p>课程介绍：房地产一哥犀利的商业观点，男人的私房课。</p>
+<p>课程名称：《李银河的52堂课》</p>
+<p>官方售价：<strong>¥198</strong></p>
+<p>课程介绍：让王小波着迷的女人，带你从源头上解放思想，知本溯源。</p>
+<p>课程名称：《黄西的幽默沟通课》</p>
+<p>官方售价：<strong>¥99</strong></p>
+<p>课程介绍：那个在白宫谈笑风声的男人，是如何从自卑走向自信。</p>
+<p>课程名称：《大咖思维升级课》</p>
+<p>官方售价：<strong>¥99</strong></p>
+<p>课程介绍：搬好小板凳，听雷军、柳传志、周鸿祎、史玉柱等15位大佬吹牛逼。</p>
+<h2 id="技能类"><a href="#技能类" class="headerlink" title="技能类"></a>技能类</h2><p><img src="https://i.loli.net/2020/05/13/ZshRbpcuwBIx7Gr.png" alt="fx07.png" style="zoom:80%;" /></p>
+<p>课程名称：《秋叶office》</p>
+<p>官方售价：<strong>¥399</strong></p>
+<p>课程介绍：知名office作家秋叶主讲，课程涵盖PPT、Excel、Word。</p>
+<p><img src="https://i.loli.net/2020/05/13/5OhNyCZfHapgenl.png" alt="fx08.png" style="zoom:80%;" /><img src="https://i.loli.net/2020/05/13/B16b7ehWZ938GJY.png" alt="fx09.png"></p>
+<p>课程名称：《刘杨后期课程》</p>
+<p>官方售价：<strong>¥2888</strong></p>
+<p>课程介绍：商业人像精修+造像之术，摄影后期优质教程。</p>
+<p><img src="https://i.loli.net/2020/05/13/5OhNyCZfHapgenl.png" alt="fx08.png" style="zoom:80%;" /><img src="https://i.loli.net/2020/05/13/B16b7ehWZ938GJY.png" alt="fx09.png"><img src="https://i.loli.net/2020/05/13/PTLm1XWAveB7ZS8.png" alt="fx10.png"></p>
+<p>课程名称：《Adobe系列课程》</p>
+<p>官方售价：<strong>¥不知道</strong></p>
+<p>课程介绍：这份Adobe教程，是前辈自己整理，涵盖pr、ae、au……。很多教程前辈自己也在看，讲的不好的统统去除，只留精华。</p>
+<p><img src="https://i.loli.net/2020/05/13/PTLm1XWAveB7ZS8.png" alt="fx10.png"></p>
+<p>课程名称：《李欣频的文案创意课》</p>
+<p>官方售价：<strong>¥199</strong></p>
+<p>课程介绍：文案天后从营销学、广告学、心理学多维度剖析文案，手把手教你写文案。</p>
+<p><img src="https://i.loli.net/2020/05/13/ihtXqLQrkDTNjSb.png" alt="fx11.png" style="zoom:80%;" /></p>
+<p>课程名称：《UI设计全能班》</p>
+<p>官方售价：<strong>¥7980</strong></p>
+<p>课程介绍：像素范儿联合高高手打造，从0到1系统学习UI。</p>
+<p>​      资源是通过网盘分享，容易被和谐，建议优先保存需要的资源。分享的课程大部分都是解压好的文件，可直接在线观看。在此附上分享网盘的群哦。</p>
+<p><img src="https://i.loli.net/2020/05/13/ue8sXHVNYrc1wai.png" alt="fx12.png" style="zoom:50%;" /></p>
+]]></content>
+      <categories>
+        <category>Share</category>
+      </categories>
+      <tags>
+        <tag>Resources</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Markdown基础</title>
     <url>/2020/05/12/Markdown%E5%9F%BA%E7%A1%80/</url>
     <content><![CDATA[<p>附 本文的Markdown源码:<br><a href="https://github.com/johnhu94/Markdown" target="_blank" rel="noopener" title="Markdown基础整理. Contribute to johnhu94/Markdown development by creating an account on GitHub.">GitHub - johnhu94/Markdown: Markdown基础整理</a><br>点击”Raw”可看到源码，欢迎fork或star~</p>
@@ -120,34 +237,6 @@
 <li>关于 <strong>序列图</strong> 语法，参考 <a href="https://zhuanlan.zhihu.com/p/70261692" target="_blank" rel="noopener" title="这篇文章将为大家介绍如何以写代码的方式画时序图（也叫顺序图），同时也会介绍一些时序图基础知识。相比于使用画图工具拖拽画图，用代码画图有什么好处？首先，这种方式非常轻便，无需安装复杂的画图应用。Typora…">Markdown 进阶技能：用代码画时序图 </a>.</li>
 <li>关于 <strong>流程图</strong> 语法，参考<a href="https://zhuanlan.zhihu.com/p/28468233" target="_blank" rel="noopener" title="前言MarkDown的简便性让人越来越喜欢。虽然MarkDown也不是万能的，有些排版等MarkDown做起来也不是那么完美，尤其是涉及图片操作。在日常的文档生产中，难免要用到一些流程图，一般用亿图图示等流程图软件画好了导…">MarkDown不能画流程图？其实很简单 </a>.</li>
 </ul>
-]]></content>
-      <categories>
-        <category>Markdown</category>
-      </categories>
-      <tags>
-        <tag>skills</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Markdown 写作</title>
-    <url>/2020/05/11/test/</url>
-    <content><![CDATA[<h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><p>markdown 写作实例</p>
-<a id="more"></a>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span><span class="params">()</span>:</span></span><br><span class="line">        print(<span class="string">"机会总是留给有准备的人。"</span>)  <span class="comment"># 人生格言!</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> __name__==<span class="string">'__main__'</span>:</span><br><span class="line">        main()</span><br></pre></td></tr></table></figure>
-<h2 id="数学公式"><a href="#数学公式" class="headerlink" title="数学公式"></a>数学公式</h2><p>行内公式 $a = b + c$.</p>
-<p>行间公式</p>
-<script type="math/tex; mode=display">e^{i\pi}+1=0.</script>]]></content>
-      <categories>
-        <category>Markdown</category>
-      </categories>
-      <tags>
-        <tag>test</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>John Hu</title>
-    <url>/2020/05/12/hello-world/</url>
-    <content><![CDATA[<p><font size=10,font size=10font face="微软雅黑"><center>Stay Hungry, Stay Foolish.</center></font><br><img src="https://i.loli.net/2020/05/11/68yBVY5EvjHermK.png" alt="First.png"></p>
 ]]></content>
       <categories>
         <category>Markdown</category>
