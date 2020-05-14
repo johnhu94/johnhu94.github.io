@@ -129,6 +129,30 @@
       </tags>
   </entry>
   <entry>
+    <title>TeX技巧系列（一）</title>
+    <url>/2020/05/14/TeX%E6%8A%80%E5%B7%A7%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89/</url>
+    <content><![CDATA[<h1 id="TeX技巧系列（一）"><a href="#TeX技巧系列（一）" class="headerlink" title="TeX技巧系列（一）"></a>TeX技巧系列（一）</h1><h2 id="TeXLive-2020-WinEdt10-3-SumatraPDF配置"><a href="#TeXLive-2020-WinEdt10-3-SumatraPDF配置" class="headerlink" title="TeXLive 2020 +WinEdt10.3+SumatraPDF配置"></a>TeXLive 2020 +WinEdt10.3+SumatraPDF配置</h2><p>​         首先需要先分别把TeXLive 2020、WinEdt和SumatraPDF分别下载并安装。TeXLive 2020文件比较大，可以参考我的博客<strong>TeX技巧系列（零）</strong>安装。WinEdt10.3和SumatraPDF都是比较轻量级的应用，安装比较方便，我就不再赘述。其中WinEdt是一款收费的应用，只有30天的试用期， 这里我给出链接，大家自己下载哦。</p>
+<p>百度网盘链接<a href="https://pan.baidu.com/s/1RhXdKPgrRapqmQKafEEFfA" target="_blank" rel="noopener">https://pan.baidu.com/s/1RhXdKPgrRapqmQKafEEFfA</a></p>
+<p>​           提取码：ohqo </p>
+<a id="more"></a>
+<ol>
+<li>下载完成之后就是更改WinEdt10.3的配置了。先配置编译引擎为TeXLive 2020。选择Options-&gt;Execution Modes-&gt;Tex System，把TeX Root更改为TeX Live 的安装路径，把TeX Bin中的路径更改为TeX Live子文件夹”\bin\win32”，后面的两个选择Auto-detect就可以了，点击应用后会自动刷新编译器。不会的看下面图示。</li>
+</ol>
+<p><img src="https://i.loli.net/2020/05/14/9PSZzwmqihtLarg.png" alt="tex1-1.png" style="zoom:80%;" /></p>
+<ol>
+<li>然后更新PDF预览器。在Options-&gt;Execution Modes-&gt;PDF Viewer 中把包含SumatraPDF.exe的路径替换原来路径，这样就行了。选择SumatraPDF是因为这个阅读器非常轻量，而且能够支持反向搜索，点击PDF中的文字可以快速定位到相应的代码位置，非常方便。 </li>
+</ol>
+<p><img src="https://i.loli.net/2020/05/14/euCndcVTfgK63DF.png" alt="tex1-2.png" style="zoom:80%;" /></p>
+<p>以上就是我们开始TeX计划的全部准备啦，下面我们就开始编写吧。</p>
+]]></content>
+      <categories>
+        <category>skill</category>
+      </categories>
+      <tags>
+        <tag>TeX</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>TeX技巧系列（零）</title>
     <url>/2020/05/14/TeX%E6%8A%80%E5%B7%A7%E7%B3%BB%E5%88%97%EF%BC%88%E9%9B%B6%EF%BC%89/</url>
     <content><![CDATA[<ul>
@@ -182,131 +206,6 @@
       </categories>
       <tags>
         <tag>TeX</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>John Hu</title>
-    <url>/2020/05/14/hello-world/</url>
-    <content><![CDATA[<p><font size=10,font size=10font face="微软雅黑"><center>Stay Hungry, Stay Foolish.</center></font><br><img src="https://i.loli.net/2020/05/11/68yBVY5EvjHermK.png" alt="First.png"></p>
-]]></content>
-      <categories>
-        <category>life</category>
-      </categories>
-      <tags>
-        <tag>motto</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>TeX技巧系列（一）</title>
-    <url>/2020/05/14/TeX%E6%8A%80%E5%B7%A7%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89/</url>
-    <content><![CDATA[<h1 id="TeX技巧系列（一）"><a href="#TeX技巧系列（一）" class="headerlink" title="TeX技巧系列（一）"></a>TeX技巧系列（一）</h1><h2 id="TeXLive-2020-WinEdt10-3-SumatraPDF配置"><a href="#TeXLive-2020-WinEdt10-3-SumatraPDF配置" class="headerlink" title="TeXLive 2020 +WinEdt10.3+SumatraPDF配置"></a>TeXLive 2020 +WinEdt10.3+SumatraPDF配置</h2><p>​         首先需要先分别把TeXLive 2020、WinEdt和SumatraPDF分别下载并安装。TeXLive 2020文件比较大，可以参考我的博客<strong>TeX技巧系列（零）</strong>安装。WinEdt10.3和SumatraPDF都是比较轻量级的应用，安装比较方便，我就不再赘述。其中WinEdt是一款收费的应用，只有30天的试用期， 这里我给出链接，大家自己下载哦。</p>
-<p>百度网盘链接<a href="https://pan.baidu.com/s/1RhXdKPgrRapqmQKafEEFfA" target="_blank" rel="noopener">https://pan.baidu.com/s/1RhXdKPgrRapqmQKafEEFfA</a></p>
-<p>​           提取码：ohqo </p>
-<a id="more"></a>
-<ol>
-<li>下载完成之后就是更改WinEdt10.3的配置了。先配置编译引擎为TeXLive 2020。选择Options-&gt;Execution Modes-&gt;Tex System，把TeX Root更改为TeX Live 的安装路径，把TeX Bin中的路径更改为TeX Live子文件夹”\bin\win32”，后面的两个选择Auto-detect就可以了，点击应用后会自动刷新编译器。不会的看下面图示。</li>
-</ol>
-<p><img src="https://i.loli.net/2020/05/14/9PSZzwmqihtLarg.png" alt="tex1-1.png" style="zoom:80%;" /></p>
-<ol>
-<li>然后更新PDF预览器。在Options-&gt;Execution Modes-&gt;PDF Viewer 中把包含SumatraPDF.exe的路径替换原来路径，这样就行了。选择SumatraPDF是因为这个阅读器非常轻量，而且能够支持反向搜索，点击PDF中的文字可以快速定位到相应的代码位置，非常方便。 </li>
-</ol>
-<p><img src="https://i.loli.net/2020/05/14/euCndcVTfgK63DF.png" alt="tex1-2.png" style="zoom:80%;" /></p>
-<p>以上就是我们开始TeX计划的全部准备啦，下面我们就开始编写吧。</p>
-]]></content>
-      <categories>
-        <category>skill</category>
-      </categories>
-      <tags>
-        <tag>TeX</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>私藏的2000G课程</title>
-    <url>/2020/05/13/%E5%88%86%E4%BA%AB/</url>
-    <content><![CDATA[<h1 id="私藏的2000G课程，买不到那种"><a href="#私藏的2000G课程，买不到那种" class="headerlink" title="私藏的2000G课程，买不到那种"></a>私藏的2000G课程，买不到那种</h1><p><img src="https://i.loli.net/2020/05/13/RTixXhmyQYMdJe6.jpg" alt="fx01.jpg" style="zoom:33%;" /></p>
-<p>​         本次分享的资源较多，都是小胡同学这几年来的收藏，精挑细选的优质课程，大概可以分为三类。</p>
-<ul>
-<li><p>一是考试类。如专四专八，四六级、教师资格证、教师招聘、初级会计、公务员考试等。</p>
-</li>
-<li><p>二是学习类。这部分则各平台销量排前，颇受大众欢迎的一些课程。</p>
-</li>
-<li><p>三是技能类。技能教学类课程，比如PR、PS、UI设计、手机摄影、单反摄影、office办公等。</p>
-</li>
-</ul>
-<p>​        本次课程大小约2000G，如果你有需要，可以根据文末的步骤领取。以下为部分资源预览，课程永久有效并会继续增加。</p>
-<a id="more"></a>
-<h2 id="考试类"><a href="#考试类" class="headerlink" title="考试类"></a>考试类</h2><p><img src="https://i.loli.net/2020/05/13/wPp3UW7eTHZfqrt.png" alt="fx02.png" style="zoom:80%;" /></p>
-<p>课程名称：《公务员考试》</p>
-<p>官方售价：<strong>¥5998</strong></p>
-<p>课程介绍：国考+联考，笔试+面试，粉笔、华图等机构课程。</p>
-<p><img src="https://i.loli.net/2020/05/13/PJRmKqy5eF79N6L.png" alt="fx03.png" style="zoom:67%;" /></p>
-<p>课程名称：《四六级》</p>
-<p>官方售价：<strong>¥不知道</strong></p>
-<p>课程介绍：四六级、四家机构，应该够用了。</p>
-<p><img src="https://i.loli.net/2020/05/13/DzqtHsYFEjSgM3r.png" alt="fx04.png" style="zoom:67%;" /></p>
-<p>课程名称：《专四专八》</p>
-<p>官方售价：<strong>¥不知道</strong></p>
-<p>课程介绍：英语专业老姐那里要来的</p>
-<p><img src="https://i.loli.net/2020/05/13/nLtxhZFMoGqQd1K.png" alt="fx05.png" style="zoom:80%;" /></p>
-<p>课程名称：《教师资格证》</p>
-<p>官方售价：<strong>¥3580</strong></p>
-<p>课程介绍：笔试+面试，认真备考，这套课程足矣。</p>
-<p><img src="https://i.loli.net/2020/05/13/uH7p6RD1Jagfdrk.png" alt="fx06.png" style="zoom:67%;" /></p>
-<p>课程名称：《初级会计》</p>
-<p>官方售价：<strong>¥399</strong></p>
-<p>课程介绍：实务+经济法，东奥、斯尔的课程。</p>
-<h2 id="学习类"><a href="#学习类" class="headerlink" title="学习类"></a>学习类</h2><p>课程名称：《基金生财一课通》</p>
-<p>官方售价：<strong>¥299</strong></p>
-<p>课程介绍：适合小白的理财课。</p>
-<p>课程名称：《简七理财课》</p>
-<p>官方售价：<strong>¥99</strong></p>
-<p>课程介绍：通俗易懂的理财课。</p>
-<p>课程名称：《蒋勋细说红楼》</p>
-<p>官方售价：<strong>¥199</strong></p>
-<p>课程介绍：美学大师蒋勋解读红楼梦，看不一样的大观园。</p>
-<p>课程名称：《薛兆丰经济学》</p>
-<p>官方售价：<strong>¥199</strong></p>
-<p>课程介绍：那个在奇葩说讲冷笑话的薛兆丰，通俗易懂又直透本质的经济学课。</p>
-<p>课程名称：《任志强商学课》</p>
-<p>官方售价：<strong>¥99</strong></p>
-<p>课程介绍：房地产一哥犀利的商业观点，男人的私房课。</p>
-<p>课程名称：《李银河的52堂课》</p>
-<p>官方售价：<strong>¥198</strong></p>
-<p>课程介绍：让王小波着迷的女人，带你从源头上解放思想，知本溯源。</p>
-<p>课程名称：《黄西的幽默沟通课》</p>
-<p>官方售价：<strong>¥99</strong></p>
-<p>课程介绍：那个在白宫谈笑风声的男人，是如何从自卑走向自信。</p>
-<p>课程名称：《大咖思维升级课》</p>
-<p>官方售价：<strong>¥99</strong></p>
-<p>课程介绍：搬好小板凳，听雷军、柳传志、周鸿祎、史玉柱等15位大佬吹牛逼。</p>
-<h2 id="技能类"><a href="#技能类" class="headerlink" title="技能类"></a>技能类</h2><p><img src="https://i.loli.net/2020/05/13/ZshRbpcuwBIx7Gr.png" alt="fx07.png" style="zoom:80%;" /></p>
-<p>课程名称：《秋叶office》</p>
-<p>官方售价：<strong>¥399</strong></p>
-<p>课程介绍：知名office作家秋叶主讲，课程涵盖PPT、Excel、Word。</p>
-<p><img src="https://i.loli.net/2020/05/13/5OhNyCZfHapgenl.png" alt="fx08.png" style="zoom:80%;" /></p>
-<p>课程名称：《刘杨后期课程》</p>
-<p>官方售价：<strong>¥2888</strong></p>
-<p>课程介绍：商业人像精修+造像之术，摄影后期优质教程。</p>
-<p><img src="https://i.loli.net/2020/05/13/B16b7ehWZ938GJY.png" alt="fx09.png" style="zoom:67%;" /></p>
-<p>课程名称：《Adobe系列课程》</p>
-<p>官方售价：<strong>¥不知道</strong></p>
-<p>课程介绍：这份Adobe教程，是前辈自己整理，涵盖pr、ae、au……。很多教程前辈自己也在看，讲的不好的统统去除，只留精华。</p>
-<p><img src="https://i.loli.net/2020/05/13/PTLm1XWAveB7ZS8.png" alt="fx10.png" style="zoom:80%;" /></p>
-<p>课程名称：《李欣频的文案创意课》</p>
-<p>官方售价：<strong>¥199</strong></p>
-<p>课程介绍：文案天后从营销学、广告学、心理学多维度剖析文案，手把手教你写文案。</p>
-<p><img src="https://i.loli.net/2020/05/13/ihtXqLQrkDTNjSb.png" alt="fx11.png" style="zoom:80%;" /></p>
-<p>课程名称：《UI设计全能班》</p>
-<p>官方售价：<strong>¥7980</strong></p>
-<p>课程介绍：像素范儿联合高高手打造，从0到1系统学习UI。</p>
-<p>​      资源是通过网盘分享，容易被和谐，建议优先保存需要的资源。分享的课程大部分都是解压好的文件，可直接在线观看。在此附上分享网盘的群哦。</p>
-<p><img src="https://i.loli.net/2020/05/13/ue8sXHVNYrc1wai.png" alt="fx12.png" style="zoom:50%;" /></p>
-]]></content>
-      <categories>
-        <category>Share</category>
-      </categories>
-      <tags>
-        <tag>Resources</tag>
       </tags>
   </entry>
   <entry>
@@ -417,6 +316,107 @@
       </categories>
       <tags>
         <tag>emotion</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>John Hu</title>
+    <url>/2020/05/14/hello-world/</url>
+    <content><![CDATA[<p><font size=10,font size=10font face="微软雅黑"><center>Stay Hungry, Stay Foolish.</center></font><br><img src="https://i.loli.net/2020/05/11/68yBVY5EvjHermK.png" alt="First.png"></p>
+]]></content>
+      <categories>
+        <category>life</category>
+      </categories>
+      <tags>
+        <tag>motto</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>私藏的2000G课程</title>
+    <url>/2020/05/13/%E5%88%86%E4%BA%AB/</url>
+    <content><![CDATA[<h1 id="私藏的2000G课程，买不到那种"><a href="#私藏的2000G课程，买不到那种" class="headerlink" title="私藏的2000G课程，买不到那种"></a>私藏的2000G课程，买不到那种</h1><p><img src="https://i.loli.net/2020/05/13/RTixXhmyQYMdJe6.jpg" alt="fx01.jpg" style="zoom:33%;" /></p>
+<p>​         本次分享的资源较多，都是小胡同学这几年来的收藏，精挑细选的优质课程，大概可以分为三类。</p>
+<ul>
+<li><p>一是考试类。如专四专八，四六级、教师资格证、教师招聘、初级会计、公务员考试等。</p>
+</li>
+<li><p>二是学习类。这部分则各平台销量排前，颇受大众欢迎的一些课程。</p>
+</li>
+<li><p>三是技能类。技能教学类课程，比如PR、PS、UI设计、手机摄影、单反摄影、office办公等。</p>
+</li>
+</ul>
+<p>​        本次课程大小约2000G，如果你有需要，可以根据文末的步骤领取。以下为部分资源预览，课程永久有效并会继续增加。</p>
+<a id="more"></a>
+<h2 id="考试类"><a href="#考试类" class="headerlink" title="考试类"></a>考试类</h2><p><img src="https://i.loli.net/2020/05/13/wPp3UW7eTHZfqrt.png" alt="fx02.png" style="zoom:80%;" /></p>
+<p>课程名称：《公务员考试》</p>
+<p>官方售价：<strong>¥5998</strong></p>
+<p>课程介绍：国考+联考，笔试+面试，粉笔、华图等机构课程。</p>
+<p><img src="https://i.loli.net/2020/05/13/PJRmKqy5eF79N6L.png" alt="fx03.png" style="zoom:67%;" /></p>
+<p>课程名称：《四六级》</p>
+<p>官方售价：<strong>¥不知道</strong></p>
+<p>课程介绍：四六级、四家机构，应该够用了。</p>
+<p><img src="https://i.loli.net/2020/05/13/DzqtHsYFEjSgM3r.png" alt="fx04.png" style="zoom:67%;" /></p>
+<p>课程名称：《专四专八》</p>
+<p>官方售价：<strong>¥不知道</strong></p>
+<p>课程介绍：英语专业老姐那里要来的</p>
+<p><img src="https://i.loli.net/2020/05/13/nLtxhZFMoGqQd1K.png" alt="fx05.png" style="zoom:80%;" /></p>
+<p>课程名称：《教师资格证》</p>
+<p>官方售价：<strong>¥3580</strong></p>
+<p>课程介绍：笔试+面试，认真备考，这套课程足矣。</p>
+<p><img src="https://i.loli.net/2020/05/13/uH7p6RD1Jagfdrk.png" alt="fx06.png" style="zoom:67%;" /></p>
+<p>课程名称：《初级会计》</p>
+<p>官方售价：<strong>¥399</strong></p>
+<p>课程介绍：实务+经济法，东奥、斯尔的课程。</p>
+<h2 id="学习类"><a href="#学习类" class="headerlink" title="学习类"></a>学习类</h2><p>课程名称：《基金生财一课通》</p>
+<p>官方售价：<strong>¥299</strong></p>
+<p>课程介绍：适合小白的理财课。</p>
+<p>课程名称：《简七理财课》</p>
+<p>官方售价：<strong>¥99</strong></p>
+<p>课程介绍：通俗易懂的理财课。</p>
+<p>课程名称：《蒋勋细说红楼》</p>
+<p>官方售价：<strong>¥199</strong></p>
+<p>课程介绍：美学大师蒋勋解读红楼梦，看不一样的大观园。</p>
+<p>课程名称：《薛兆丰经济学》</p>
+<p>官方售价：<strong>¥199</strong></p>
+<p>课程介绍：那个在奇葩说讲冷笑话的薛兆丰，通俗易懂又直透本质的经济学课。</p>
+<p>课程名称：《任志强商学课》</p>
+<p>官方售价：<strong>¥99</strong></p>
+<p>课程介绍：房地产一哥犀利的商业观点，男人的私房课。</p>
+<p>课程名称：《李银河的52堂课》</p>
+<p>官方售价：<strong>¥198</strong></p>
+<p>课程介绍：让王小波着迷的女人，带你从源头上解放思想，知本溯源。</p>
+<p>课程名称：《黄西的幽默沟通课》</p>
+<p>官方售价：<strong>¥99</strong></p>
+<p>课程介绍：那个在白宫谈笑风声的男人，是如何从自卑走向自信。</p>
+<p>课程名称：《大咖思维升级课》</p>
+<p>官方售价：<strong>¥99</strong></p>
+<p>课程介绍：搬好小板凳，听雷军、柳传志、周鸿祎、史玉柱等15位大佬吹牛逼。</p>
+<h2 id="技能类"><a href="#技能类" class="headerlink" title="技能类"></a>技能类</h2><p><img src="https://i.loli.net/2020/05/13/ZshRbpcuwBIx7Gr.png" alt="fx07.png" style="zoom:80%;" /></p>
+<p>课程名称：《秋叶office》</p>
+<p>官方售价：<strong>¥399</strong></p>
+<p>课程介绍：知名office作家秋叶主讲，课程涵盖PPT、Excel、Word。</p>
+<p><img src="https://i.loli.net/2020/05/13/5OhNyCZfHapgenl.png" alt="fx08.png" style="zoom:80%;" /></p>
+<p>课程名称：《刘杨后期课程》</p>
+<p>官方售价：<strong>¥2888</strong></p>
+<p>课程介绍：商业人像精修+造像之术，摄影后期优质教程。</p>
+<p><img src="https://i.loli.net/2020/05/13/B16b7ehWZ938GJY.png" alt="fx09.png" style="zoom:67%;" /></p>
+<p>课程名称：《Adobe系列课程》</p>
+<p>官方售价：<strong>¥不知道</strong></p>
+<p>课程介绍：这份Adobe教程，是前辈自己整理，涵盖pr、ae、au……。很多教程前辈自己也在看，讲的不好的统统去除，只留精华。</p>
+<p><img src="https://i.loli.net/2020/05/13/PTLm1XWAveB7ZS8.png" alt="fx10.png" style="zoom:80%;" /></p>
+<p>课程名称：《李欣频的文案创意课》</p>
+<p>官方售价：<strong>¥199</strong></p>
+<p>课程介绍：文案天后从营销学、广告学、心理学多维度剖析文案，手把手教你写文案。</p>
+<p><img src="https://i.loli.net/2020/05/13/ihtXqLQrkDTNjSb.png" alt="fx11.png" style="zoom:80%;" /></p>
+<p>课程名称：《UI设计全能班》</p>
+<p>官方售价：<strong>¥7980</strong></p>
+<p>课程介绍：像素范儿联合高高手打造，从0到1系统学习UI。</p>
+<p>​      资源是通过网盘分享，容易被和谐，建议优先保存需要的资源。分享的课程大部分都是解压好的文件，可直接在线观看。在此附上分享网盘的群哦。</p>
+<p><img src="https://i.loli.net/2020/05/13/ue8sXHVNYrc1wai.png" alt="fx12.png" style="zoom:50%;" /></p>
+]]></content>
+      <categories>
+        <category>Share</category>
+      </categories>
+      <tags>
+        <tag>Resources</tag>
       </tags>
   </entry>
 </search>
