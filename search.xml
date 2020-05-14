@@ -1,62 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>TeX技巧系列（零）</title>
-    <url>/2020/05/14/TeX%E6%8A%80%E5%B7%A7%E7%B3%BB%E5%88%97%EF%BC%88%E9%9B%B6%EF%BC%89/</url>
-    <content><![CDATA[<ul>
-<li><h1 id="TeX技巧系列（零）"><a href="#TeX技巧系列（零）" class="headerlink" title="TeX技巧系列（零）"></a>TeX技巧系列（零）</h1></li>
-</ul>
-<h2 id="TeXLive-2020-下载与安装"><a href="#TeXLive-2020-下载与安装" class="headerlink" title="TeXLive 2020 下载与安装"></a>TeXLive 2020 下载与安装</h2><p>​     该软件最新发布时间是在前天4月10号，我就将旧版本卸载了，找到<code>C:\texlive\2019\tlpkg\installer\uninst.bat</code>然后双击执行即可，并将其环境变量移出，用起开始我们2020版本的下载与安装，<code>整个流程大概就是1个小时不到ok</code>。</p>
-<a id="more"></a>
-<h4 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h4><ol>
-<li><p>选择一个国内源，这里我用的是腾讯云，地址贴下：<br><a href="https://mirrors.cloud.tencent.com/CTAN/systems/texlive/Images/texlive2020.iso" target="_blank" rel="noopener">https://mirrors.cloud.tencent.com/CTAN/systems/texlive/Images/texlive2020.iso</a></p>
-</li>
-<li><p>利用迅雷下载神器，将其上面地址复制到该软件，最高时速可达到15-20M/s. </p>
-<p><img src="https://i.loli.net/2020/05/14/em3sO1SRHDPfJki.png" alt="tex0-1.png"></p>
-</li>
-<li><p>然后等待大概10分钟左右即可下载完全。</p>
-</li>
-</ol>
-<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><ol>
-<li>点击texlive2020.iso，如果是win10系统，双击打开即可；如果是<code>win7</code>系统的话，使用软件<code>WinCDEEmu</code>挂载，然后双击打开其中的<code>install-tl-windows.bat</code>，不过按以往版本的镜像文件里面是有<code>install-tl-windows.bat</code>和<code>install-tl-advanced.bat</code>这两个脚本，双击其中任何一个都可以在<code>Windows</code>上自动安装。</li>
-</ol>
-<p><img src="https://i.loli.net/2020/05/14/8RFnHEMVuDg2OGU.png" alt="tex0-2.png" style="zoom:80%;" /></p>
-<ol>
-<li>可修改安装路径，一般默认<code>C</code>盘，如果你空间不够可考虑其它盘，其它设置可点击左下角 <code>Advanced</code>.<br><img src="https://i.loli.net/2020/05/14/il5fN6jxvEPHIAC.png" alt="tex0-3.png" style="zoom:80%;" /></li>
-</ol>
-<p><img src="https://i.loli.net/2020/05/14/GxiZNV6hTwnJ8qD.png" alt="tex0-4.png" style="zoom: 67%;" /></p>
-<ol>
-<li><p>等待半个小时的过程……</p>
-<p><img src="https://i.loli.net/2020/05/14/pjrCUtuzS1xGNFA.png" alt="tex0-5.png" style="zoom:80%;" /></p>
-</li>
-<li><p>安装完整</p>
-</li>
-</ol>
-<p><img src="https://i.loli.net/2020/05/14/vgUu2W3bnawAHSC.png" alt="tex0-6.png" style="zoom:80%;" /></p>
-<h4 id="不同编辑器测试"><a href="#不同编辑器测试" class="headerlink" title="不同编辑器测试"></a>不同编辑器测试</h4><ol>
-<li><p>TeXstudio</p>
-<p><img src="https://i.loli.net/2020/05/14/BqWHGrxR38QFvYN.png" alt="tex0-7.png"></p>
-</li>
-</ol>
-<p>2.TeXwork</p>
-<p><img src="https://i.loli.net/2020/05/14/vRMDywz83V57tAi.png" alt="tex0-8.png"></p>
-<p>3.Sublime Text</p>
-<p><img src="https://i.loli.net/2020/05/14/xPwysoMBT2ntG86.png" alt="tex0-9.png"></p>
-<ol>
-<li><p>WinEdt 10.3</p>
-<p><img src="https://i.loli.net/2020/05/14/jXfaV2eR9yxDJvg.png" alt="tex0-10.png"></p>
-</li>
-</ol>
-<p>​    根据自己的测试，本人给大家推荐WinEdt 10.3+SumatraPDF配置哦，下面会给大家详细介绍，如何配置。</p>
-]]></content>
-      <categories>
-        <category>skill</category>
-      </categories>
-      <tags>
-        <tag>TeX</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Markdown基础</title>
     <url>/2020/05/12/Markdown%E5%9F%BA%E7%A1%80/</url>
     <content><![CDATA[<p>附 本文的Markdown源码:<br><a href="https://github.com/johnhu94/Markdown" target="_blank" rel="noopener" title="Markdown基础整理. Contribute to johnhu94/Markdown development by creating an account on GitHub.">GitHub - johnhu94/Markdown: Markdown基础整理</a><br>点击”Raw”可看到源码，欢迎fork或star~</p>
@@ -185,22 +129,59 @@
       </tags>
   </entry>
   <entry>
-    <title>上海新场古镇随记</title>
-    <url>/2020/05/14/%E4%B8%8A%E6%B5%B7%E6%96%B0%E5%9C%BA%E5%8F%A4%E9%95%87/</url>
-    <content><![CDATA[<h2 id="上海新场古镇"><a href="#上海新场古镇" class="headerlink" title="上海新场古镇"></a>上海新场古镇</h2><h2 id="Shanghai-Xinchang-Ancient-Town"><a href="#Shanghai-Xinchang-Ancient-Town" class="headerlink" title="Shanghai Xinchang Ancient Town"></a>Shanghai Xinchang Ancient Town</h2><p>  2020.5.12   春天来了，也许已经过去了。天竟晴了，风也停了，阳光很好。</p>
-<h5 id="更新封面"><a href="#更新封面" class="headerlink" title="更新封面"></a>更新封面</h5><p><img src="https://i.loli.net/2020/05/14/1frFzyqioLmPs34.jpg" alt="xy06.jpg"></p>
-<p><img src="https://i.loli.net/2020/05/14/Uu28EwkTyigRNqI.jpg" alt="xy05.jpg"></p>
-<h5 id="古桥、古楼"><a href="#古桥、古楼" class="headerlink" title="古桥、古楼"></a>古桥、古楼</h5><p><img src="https://i.loli.net/2020/05/12/4Bm5bjcrzM7OLlU.jpg" alt="xy01.jpg"></p>
+    <title>TeX技巧系列（零）</title>
+    <url>/2020/05/14/TeX%E6%8A%80%E5%B7%A7%E7%B3%BB%E5%88%97%EF%BC%88%E9%9B%B6%EF%BC%89/</url>
+    <content><![CDATA[<ul>
+<li><h1 id="TeX技巧系列（零）"><a href="#TeX技巧系列（零）" class="headerlink" title="TeX技巧系列（零）"></a>TeX技巧系列（零）</h1></li>
+</ul>
+<h2 id="TeXLive-2020-下载与安装"><a href="#TeXLive-2020-下载与安装" class="headerlink" title="TeXLive 2020 下载与安装"></a>TeXLive 2020 下载与安装</h2><p>​     该软件最新发布时间是在前天4月10号，我就将旧版本卸载了，找到<code>C:\texlive\2019\tlpkg\installer\uninst.bat</code>然后双击执行即可，并将其环境变量移出，用起开始我们2020版本的下载与安装，<code>整个流程大概就是1个小时不到ok</code>。</p>
 <a id="more"></a>
-<h5 id="心愿"><a href="#心愿" class="headerlink" title="心愿"></a>心愿</h5><p><img src="https://i.loli.net/2020/05/12/HyQ2tkVEhlZ5YPL.jpg" alt="xy02.jpg"></p>
-<h5 id="九成"><a href="#九成" class="headerlink" title="九成"></a>九成</h5><p><img src="https://i.loli.net/2020/05/12/rn87UGjmRLabICE.jpg" alt="xy03.jpg"></p>
-<h5 id="回忆"><a href="#回忆" class="headerlink" title="回忆"></a>回忆</h5><p><img src="https://i.loli.net/2020/05/12/OdqMQZ6TXGz98yh.jpg" alt="xy04.jpg"></p>
+<h4 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h4><ol>
+<li><p>选择一个国内源，这里我用的是腾讯云，地址贴下：<br><a href="https://mirrors.cloud.tencent.com/CTAN/systems/texlive/Images/texlive2020.iso" target="_blank" rel="noopener">https://mirrors.cloud.tencent.com/CTAN/systems/texlive/Images/texlive2020.iso</a></p>
+</li>
+<li><p>利用迅雷下载神器，将其上面地址复制到该软件，最高时速可达到15-20M/s. </p>
+<p><img src="https://i.loli.net/2020/05/14/em3sO1SRHDPfJki.png" alt="tex0-1.png"></p>
+</li>
+<li><p>然后等待大概10分钟左右即可下载完全。</p>
+</li>
+</ol>
+<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><ol>
+<li>点击texlive2020.iso，如果是win10系统，双击打开即可；如果是<code>win7</code>系统的话，使用软件<code>WinCDEEmu</code>挂载，然后双击打开其中的<code>install-tl-windows.bat</code>，不过按以往版本的镜像文件里面是有<code>install-tl-windows.bat</code>和<code>install-tl-advanced.bat</code>这两个脚本，双击其中任何一个都可以在<code>Windows</code>上自动安装。</li>
+</ol>
+<p><img src="https://i.loli.net/2020/05/14/8RFnHEMVuDg2OGU.png" alt="tex0-2.png" style="zoom:80%;" /></p>
+<ol>
+<li>可修改安装路径，一般默认<code>C</code>盘，如果你空间不够可考虑其它盘，其它设置可点击左下角 <code>Advanced</code>.<br><img src="https://i.loli.net/2020/05/14/il5fN6jxvEPHIAC.png" alt="tex0-3.png" style="zoom:80%;" /></li>
+</ol>
+<p><img src="https://i.loli.net/2020/05/14/GxiZNV6hTwnJ8qD.png" alt="tex0-4.png" style="zoom: 67%;" /></p>
+<ol>
+<li><p>等待半个小时的过程……</p>
+<p><img src="https://i.loli.net/2020/05/14/pjrCUtuzS1xGNFA.png" alt="tex0-5.png" style="zoom:80%;" /></p>
+</li>
+<li><p>安装完整</p>
+</li>
+</ol>
+<p><img src="https://i.loli.net/2020/05/14/vgUu2W3bnawAHSC.png" alt="tex0-6.png" style="zoom:80%;" /></p>
+<h4 id="不同编辑器测试"><a href="#不同编辑器测试" class="headerlink" title="不同编辑器测试"></a>不同编辑器测试</h4><ol>
+<li><p>TeXstudio</p>
+<p><img src="https://i.loli.net/2020/05/14/BqWHGrxR38QFvYN.png" alt="tex0-7.png"></p>
+</li>
+</ol>
+<p>2.TeXwork</p>
+<p><img src="https://i.loli.net/2020/05/14/vRMDywz83V57tAi.png" alt="tex0-8.png"></p>
+<p>3.Sublime Text</p>
+<p><img src="https://i.loli.net/2020/05/14/xPwysoMBT2ntG86.png" alt="tex0-9.png"></p>
+<ol>
+<li><p>WinEdt 10.3</p>
+<p><img src="https://i.loli.net/2020/05/14/jXfaV2eR9yxDJvg.png" alt="tex0-10.png"></p>
+</li>
+</ol>
+<p>​    根据自己的测试，本人给大家推荐WinEdt 10.3+SumatraPDF配置哦，下面会给大家详细介绍，如何配置。</p>
 ]]></content>
       <categories>
-        <category>personal</category>
+        <category>skill</category>
       </categories>
       <tags>
-        <tag>photography</tag>
+        <tag>TeX</tag>
       </tags>
   </entry>
   <entry>
@@ -213,6 +194,30 @@
       </categories>
       <tags>
         <tag>motto</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>TeX技巧系列（一）</title>
+    <url>/2020/05/14/TeX%E6%8A%80%E5%B7%A7%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89/</url>
+    <content><![CDATA[<h1 id="TeX技巧系列（一）"><a href="#TeX技巧系列（一）" class="headerlink" title="TeX技巧系列（一）"></a>TeX技巧系列（一）</h1><h2 id="TeXLive-2020-WinEdt10-3-SumatraPDF配置"><a href="#TeXLive-2020-WinEdt10-3-SumatraPDF配置" class="headerlink" title="TeXLive 2020 +WinEdt10.3+SumatraPDF配置"></a>TeXLive 2020 +WinEdt10.3+SumatraPDF配置</h2><p>​         首先需要先分别把TeXLive 2020、WinEdt和SumatraPDF分别下载并安装。TeXLive 2020文件比较大，可以参考我的博客<strong>TeX技巧系列（零）</strong>安装。WinEdt10.3和SumatraPDF都是比较轻量级的应用，安装比较方便，我就不再赘述。其中WinEdt是一款收费的应用，只有30天的试用期， 这里我给出链接，大家自己下载哦。</p>
+<p>百度网盘链接<a href="https://pan.baidu.com/s/1RhXdKPgrRapqmQKafEEFfA" target="_blank" rel="noopener">https://pan.baidu.com/s/1RhXdKPgrRapqmQKafEEFfA</a></p>
+<p>​           提取码：ohqo </p>
+<a id="more"></a>
+<ol>
+<li>下载完成之后就是更改WinEdt10.3的配置了。先配置编译引擎为TeXLive 2020。选择Options-&gt;Execution Modes-&gt;Tex System，把TeX Root更改为TeX Live 的安装路径，把TeX Bin中的路径更改为TeX Live子文件夹”\bin\win32”，后面的两个选择Auto-detect就可以了，点击应用后会自动刷新编译器。不会的看下面图示。</li>
+</ol>
+<p><img src="https://i.loli.net/2020/05/14/9PSZzwmqihtLarg.png" alt="tex1-1.png" style="zoom:80%;" /></p>
+<ol>
+<li>然后更新PDF预览器。在Options-&gt;Execution Modes-&gt;PDF Viewer 中把包含SumatraPDF.exe的路径替换原来路径，这样就行了。选择SumatraPDF是因为这个阅读器非常轻量，而且能够支持反向搜索，点击PDF中的文字可以快速定位到相应的代码位置，非常方便。 </li>
+</ol>
+<p><img src="https://i.loli.net/2020/05/14/euCndcVTfgK63DF.png" alt="tex1-2.png" style="zoom:80%;" /></p>
+<p>以上就是我们开始TeX计划的全部准备啦，下面我们就开始编写吧。</p>
+]]></content>
+      <categories>
+        <category>skill</category>
+      </categories>
+      <tags>
+        <tag>TeX</tag>
       </tags>
   </entry>
   <entry>
@@ -302,6 +307,25 @@
       </categories>
       <tags>
         <tag>Resources</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>上海新场古镇随记</title>
+    <url>/2020/05/14/%E4%B8%8A%E6%B5%B7%E6%96%B0%E5%9C%BA%E5%8F%A4%E9%95%87/</url>
+    <content><![CDATA[<h2 id="上海新场古镇"><a href="#上海新场古镇" class="headerlink" title="上海新场古镇"></a>上海新场古镇</h2><h2 id="Shanghai-Xinchang-Ancient-Town"><a href="#Shanghai-Xinchang-Ancient-Town" class="headerlink" title="Shanghai Xinchang Ancient Town"></a>Shanghai Xinchang Ancient Town</h2><p>  2020.5.12   春天来了，也许已经过去了。天竟晴了，风也停了，阳光很好。</p>
+<h5 id="更新封面"><a href="#更新封面" class="headerlink" title="更新封面"></a>更新封面</h5><p><img src="https://i.loli.net/2020/05/14/1frFzyqioLmPs34.jpg" alt="xy06.jpg"></p>
+<p><img src="https://i.loli.net/2020/05/14/Uu28EwkTyigRNqI.jpg" alt="xy05.jpg"></p>
+<h5 id="古桥、古楼"><a href="#古桥、古楼" class="headerlink" title="古桥、古楼"></a>古桥、古楼</h5><p><img src="https://i.loli.net/2020/05/12/4Bm5bjcrzM7OLlU.jpg" alt="xy01.jpg"></p>
+<a id="more"></a>
+<h5 id="心愿"><a href="#心愿" class="headerlink" title="心愿"></a>心愿</h5><p><img src="https://i.loli.net/2020/05/12/HyQ2tkVEhlZ5YPL.jpg" alt="xy02.jpg"></p>
+<h5 id="九成"><a href="#九成" class="headerlink" title="九成"></a>九成</h5><p><img src="https://i.loli.net/2020/05/12/rn87UGjmRLabICE.jpg" alt="xy03.jpg"></p>
+<h5 id="回忆"><a href="#回忆" class="headerlink" title="回忆"></a>回忆</h5><p><img src="https://i.loli.net/2020/05/12/OdqMQZ6TXGz98yh.jpg" alt="xy04.jpg"></p>
+]]></content>
+      <categories>
+        <category>personal</category>
+      </categories>
+      <tags>
+        <tag>photography</tag>
       </tags>
   </entry>
 </search>
