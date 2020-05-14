@@ -122,10 +122,10 @@
 </ul>
 ]]></content>
       <categories>
-        <category>Markdown</category>
+        <category>skill</category>
       </categories>
       <tags>
-        <tag>skills</tag>
+        <tag>Markdown</tag>
       </tags>
   </entry>
   <entry>
@@ -154,7 +154,6 @@
 <li><h1 id="TeX技巧系列（零）"><a href="#TeX技巧系列（零）" class="headerlink" title="TeX技巧系列（零）"></a>TeX技巧系列（零）</h1></li>
 </ul>
 <h2 id="TeXLive-2020-下载与安装"><a href="#TeXLive-2020-下载与安装" class="headerlink" title="TeXLive 2020 下载与安装"></a>TeXLive 2020 下载与安装</h2><p>​     该软件最新发布时间是在前天4月10号，我就将旧版本卸载了，找到<code>C:\texlive\2019\tlpkg\installer\uninst.bat</code>然后双击执行即可，并将其环境变量移出，用起开始我们2020版本的下载与安装，<code>整个流程大概就是1个小时不到ok</code>。</p>
-<p>[TOC]</p>
 <a id="more"></a>
 <h4 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h4><ol>
 <li><p>选择一个国内源，这里我用的是腾讯云，地址贴下：<br><a href="https://mirrors.cloud.tencent.com/CTAN/systems/texlive/Images/texlive2020.iso" target="_blank" rel="noopener">https://mirrors.cloud.tencent.com/CTAN/systems/texlive/Images/texlive2020.iso</a></p>
@@ -198,10 +197,10 @@
 <p>​    根据自己的测试，本人给大家推荐WinEdt 10.3+SumatraPDF配置哦，下面会给大家详细介绍，如何配置。</p>
 ]]></content>
       <categories>
-        <category>TeX</category>
+        <category>skill</category>
       </categories>
       <tags>
-        <tag>skill</tag>
+        <tag>TeX</tag>
       </tags>
   </entry>
   <entry>
@@ -213,7 +212,7 @@
         <category>life</category>
       </categories>
       <tags>
-        <tag>skills</tag>
+        <tag>motto</tag>
       </tags>
   </entry>
   <entry>
