@@ -228,23 +228,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Markdown 写作</title>
-    <url>/2020/05/11/test/</url>
-    <content><![CDATA[<p><img src="https://i.loli.net/2020/05/15/jVn7pQ6FYtZqXal.jpg" alt="Two.jpg"></p>
-<h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><p>markdown 写作实例</p>
-<a id="more"></a>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span><span class="params">()</span>:</span></span><br><span class="line">        print(<span class="string">"机会总是留给有准备的人。"</span>)  <span class="comment"># 人生格言!</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> __name__==<span class="string">'__main__'</span>:</span><br><span class="line">        main()</span><br></pre></td></tr></table></figure>
-<h2 id="数学公式"><a href="#数学公式" class="headerlink" title="数学公式"></a>数学公式</h2><p>行内公式 $a = b + c$.</p>
-<p>行间公式</p>
-<script type="math/tex; mode=display">e^{i\pi}+1=0.</script>]]></content>
-      <categories>
-        <category>Markdown</category>
-      </categories>
-      <tags>
-        <tag>test</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>John Hu</title>
     <url>/2020/05/14/hello-world/</url>
     <content><![CDATA[<p><font size=10,font size=10font face="微软雅黑"><center>Stay Hungry, Stay Foolish.</center></font><br><img src="https://i.loli.net/2020/05/11/68yBVY5EvjHermK.png" alt="First.png"></p>
@@ -512,6 +495,26 @@
       </categories>
       <tags>
         <tag>Resources</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>软件推荐系列（零）</title>
+    <url>/2020/05/11/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90%E7%B3%BB%E5%88%97%EF%BC%88%E9%9B%B6%EF%BC%89/</url>
+    <content><![CDATA[<h2 id="迅捷PDF免安装版"><a href="#迅捷PDF免安装版" class="headerlink" title="迅捷PDF免安装版"></a>迅捷PDF免安装版</h2><p>​      迅捷PDF转换器是一款功能强大、界面简洁、操作简单的PDF转换成Word或word转换成pdf的软件。软件具备快速转换、批量转换，高质量识别等功能。本款软件为免安装版，大家双击即可运行软件，大家可以创建一个快捷方式添加到桌面，方便下次使用。首先我们先来使用文件夹中的注册机，激活一下软件。</p>
+<a id="more"></a>
+<p><img src="https://i.loli.net/2020/05/16/AQdNqWcV6k9ifsC.png" alt="pdf01.png" style="zoom:50%;" /></p>
+<p>​      点击注册，大家先复制软件中的机器码，然后通过注册机，注册一个注册码。然后将注册码复制粘贴进软件中激活界面即可成功。</p>
+<p><img src="https://i.loli.net/2020/05/16/tRMHNYJWZpzPAer.png" alt="pdf02.png" style="zoom:67%;" /></p>
+<p><img src="https://i.loli.net/2020/05/16/qtIEacVDrsTug7o.png" alt="pdf03.png" style="zoom:67%;" /></p>
+<p><img src="https://i.loli.net/2020/05/16/B78MGiJDEAYgIFS.png" alt="pdf04.png" style="zoom:67%;" /></p>
+<p>​      一切都完成之后，软件内的所有软件就可以正常使用，文件转word、ppt、图片等，除此之外还支持电子书格式转换，功能非常的全面。<br>​     最后附上百度网盘的链接   <a href="https://pan.baidu.com/s/1ZXmDWNm81-2t6pjnpXSWyQ" target="_blank" rel="noopener">https://pan.baidu.com/s/1ZXmDWNm81-2t6pjnpXSWyQ</a><br>​                                     提取码   tpn0</p>
+<p>​                      该系列不定时更新哦，小胡只要遇到好的软件会给大家分享哒！！！</p>
+]]></content>
+      <categories>
+        <category>Share</category>
+      </categories>
+      <tags>
+        <tag>PDF</tag>
       </tags>
   </entry>
 </search>
