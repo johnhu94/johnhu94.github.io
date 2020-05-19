@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
 <meta name="generator" content="Hexo 4.2.0">
@@ -82,12 +82,12 @@
   .use-motion .logo-line-before i { left: initial; }
   .use-motion .logo-line-after i { right: initial; }
   </style>
-</noscript>
+</noscript><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container use-motion">
     <div class="headband"></div>
 
     <header class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -257,11 +257,17 @@
       
         <h2 id="迅捷PDF免安装版"><a href="#迅捷PDF免安装版" class="headerlink" title="迅捷PDF免安装版"></a>迅捷PDF免安装版</h2><p>​      迅捷PDF转换器是一款功能强大、界面简洁、操作简单的PDF转换成Word或word转换成pdf的软件。软件具备快速转换、批量转换，高质量识别等功能。本款软件为免安装版，大家双击即可运行软件，大家可以创建一个快捷方式添加到桌面，方便下次使用。首先我们先来使用文件夹中的注册机，激活一下软件。</p>
 <a id="more"></a>
-<p><img src="https://i.loli.net/2020/05/16/AQdNqWcV6k9ifsC.png" alt="pdf01.png" style="zoom:50%;" /></p>
+
+<img src="https://i.loli.net/2020/05/16/AQdNqWcV6k9ifsC.png" alt="pdf01.png" style="zoom:50%;" />
+
 <p>​      点击注册，大家先复制软件中的机器码，然后通过注册机，注册一个注册码。然后将注册码复制粘贴进软件中激活界面即可成功。</p>
-<p><img src="https://i.loli.net/2020/05/16/tRMHNYJWZpzPAer.png" alt="pdf02.png" style="zoom:67%;" /></p>
-<p><img src="https://i.loli.net/2020/05/16/qtIEacVDrsTug7o.png" alt="pdf03.png" style="zoom:67%;" /></p>
-<p><img src="https://i.loli.net/2020/05/16/B78MGiJDEAYgIFS.png" alt="pdf04.png" style="zoom:67%;" /></p>
+<img src="https://i.loli.net/2020/05/16/tRMHNYJWZpzPAer.png" alt="pdf02.png" style="zoom:67%;" />
+
+<img src="https://i.loli.net/2020/05/16/qtIEacVDrsTug7o.png" alt="pdf03.png" style="zoom:67%;" />
+
+<img src="https://i.loli.net/2020/05/16/B78MGiJDEAYgIFS.png" alt="pdf04.png" style="zoom:67%;" />
+
+
 <p>​      一切都完成之后，软件内的所有软件就可以正常使用，文件转word、ppt、图片等，除此之外还支持电子书格式转换，功能非常的全面。<br>​     最后附上百度网盘的链接   <a href="https://pan.baidu.com/s/1ZXmDWNm81-2t6pjnpXSWyQ" target="_blank" rel="noopener">https://pan.baidu.com/s/1ZXmDWNm81-2t6pjnpXSWyQ</a><br>​                                     提取码   tpn0</p>
 <p>​                      该系列不定时更新哦，小胡只要遇到好的软件会给大家分享哒！！！</p>
 
@@ -363,20 +369,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">14</span>
+          <span class="site-state-item-count">13</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">categories</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-count">10</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -488,61 +494,6 @@
   
 
   
-      
-
-<script>
-  if (typeof MathJax === 'undefined') {
-    window.MathJax = {
-      loader: {
-        source: {
-          '[tex]/amsCd': '[tex]/amscd',
-          '[tex]/AMScd': '[tex]/amscd'
-        }
-      },
-      tex: {
-        inlineMath: {'[+]': [['$', '$']]},
-        tags: 'ams'
-      },
-      options: {
-        renderActions: {
-          findScript: [10, doc => {
-            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
-              const display = !!node.type.match(/; *mode=display/);
-              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
-              const text = document.createTextNode('');
-              node.parentNode.replaceChild(text, node);
-              math.start = {node: text, delim: '', n: 0};
-              math.end = {node: text, delim: '', n: 0};
-              doc.math.push(math);
-            });
-          }, '', false],
-          insertedScript: [200, () => {
-            document.querySelectorAll('mjx-container').forEach(node => {
-              let target = node.parentNode;
-              if (target.nodeName.toLowerCase() === 'li') {
-                target.parentNode.classList.add('has-jax');
-              }
-            });
-          }, '', false]
-        }
-      }
-    };
-    (function () {
-      var script = document.createElement('script');
-      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
-      script.defer = true;
-      document.head.appendChild(script);
-    })();
-  } else {
-    MathJax.startup.document.state(0);
-    MathJax.texReset();
-    MathJax.typeset();
-  }
-</script>
-
-    
-
-  
 
 
 <script>
@@ -571,7 +522,7 @@ NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
     });
   }, window.Valine);
 });
-</script>
+</script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
 </body>
 </html>

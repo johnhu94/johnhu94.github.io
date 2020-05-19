@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
 <meta name="generator" content="Hexo 4.2.0">
@@ -80,12 +80,12 @@
   .use-motion .logo-line-before i { left: initial; }
   .use-motion .logo-line-after i { right: initial; }
   </style>
-</noscript>
+</noscript><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container use-motion">
     <div class="headband"></div>
 
     <header class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -257,14 +257,19 @@
 <p>百度网盘链接<a href="https://pan.baidu.com/s/1RhXdKPgrRapqmQKafEEFfA" target="_blank" rel="noopener">https://pan.baidu.com/s/1RhXdKPgrRapqmQKafEEFfA</a></p>
 <p>​           提取码：ohqo </p>
 <a id="more"></a>
+
 <ol>
 <li>下载完成之后就是更改WinEdt10.3的配置了。先配置编译引擎为TeXLive 2020。选择Options-&gt;Execution Modes-&gt;Tex System，把TeX Root更改为TeX Live 的安装路径，把TeX Bin中的路径更改为TeX Live子文件夹”\bin\win32”，后面的两个选择Auto-detect就可以了，点击应用后会自动刷新编译器。不会的看下面图示。</li>
 </ol>
-<p><img src="https://i.loli.net/2020/05/14/9PSZzwmqihtLarg.png" alt="tex1-1.png" style="zoom:80%;" /></p>
-<ol>
+<img src="https://i.loli.net/2020/05/14/9PSZzwmqihtLarg.png" alt="tex1-1.png" style="zoom:80%;" />
+
+<ol start="2">
 <li>然后更新PDF预览器。在Options-&gt;Execution Modes-&gt;PDF Viewer 中把包含SumatraPDF.exe的路径替换原来路径，这样就行了。选择SumatraPDF是因为这个阅读器非常轻量，而且能够支持反向搜索，点击PDF中的文字可以快速定位到相应的代码位置，非常方便。 </li>
 </ol>
-<p><img src="https://i.loli.net/2020/05/14/euCndcVTfgK63DF.png" alt="tex1-2.png" style="zoom:80%;" /></p>
+<img src="https://i.loli.net/2020/05/14/euCndcVTfgK63DF.png" alt="tex1-2.png" style="zoom:80%;" />
+
+
+
 <p>以上就是我们开始TeX计划的全部准备啦，下面我们就开始编写吧。</p>
 
     </div>
@@ -365,20 +370,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">14</span>
+          <span class="site-state-item-count">13</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">categories</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-count">10</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -490,61 +495,6 @@
   
 
   
-      
-
-<script>
-  if (typeof MathJax === 'undefined') {
-    window.MathJax = {
-      loader: {
-        source: {
-          '[tex]/amsCd': '[tex]/amscd',
-          '[tex]/AMScd': '[tex]/amscd'
-        }
-      },
-      tex: {
-        inlineMath: {'[+]': [['$', '$']]},
-        tags: 'ams'
-      },
-      options: {
-        renderActions: {
-          findScript: [10, doc => {
-            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
-              const display = !!node.type.match(/; *mode=display/);
-              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
-              const text = document.createTextNode('');
-              node.parentNode.replaceChild(text, node);
-              math.start = {node: text, delim: '', n: 0};
-              math.end = {node: text, delim: '', n: 0};
-              doc.math.push(math);
-            });
-          }, '', false],
-          insertedScript: [200, () => {
-            document.querySelectorAll('mjx-container').forEach(node => {
-              let target = node.parentNode;
-              if (target.nodeName.toLowerCase() === 'li') {
-                target.parentNode.classList.add('has-jax');
-              }
-            });
-          }, '', false]
-        }
-      }
-    };
-    (function () {
-      var script = document.createElement('script');
-      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
-      script.defer = true;
-      document.head.appendChild(script);
-    })();
-  } else {
-    MathJax.startup.document.state(0);
-    MathJax.texReset();
-    MathJax.typeset();
-  }
-</script>
-
-    
-
-  
 
 
 <script>
@@ -573,7 +523,7 @@ NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
     });
   }, window.Valine);
 });
-</script>
+</script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
 </body>
 </html>
