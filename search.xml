@@ -1,136 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Markdown基础</title>
-    <url>/2020/05/12/Markdown-basic/</url>
-    <content><![CDATA[<p>附 本文的Markdown源码:<br><a href="https://github.com/johnhu94/Markdown" target="_blank" rel="noopener" title="Markdown基础整理. Contribute to johnhu94/Markdown development by creating an account on GitHub.">GitHub - johnhu94/Markdown: Markdown基础整理</a><br>点击”Raw”可看到源码，欢迎fork或star~</p>
-<ul>
-<li><strong>Markdown和扩展Markdown简洁的语法</strong></li>
-<li><strong>代码块高亮</strong></li>
-<li><strong>图片链接和图片上传</strong></li>
-<li><strong><em>LaTex\</em>数学公式</strong></li>
-<li><strong>导入导出Markdown文件</strong></li>
-<li><strong>丰富的快捷键</strong></li>
-</ul>
+    <title>上海外滩随记</title>
+    <url>/2020/05/28/SH-BUND/</url>
+    <content><![CDATA[<h2 id="Shanghai-Bund"><a href="#Shanghai-Bund" class="headerlink" title="Shanghai Bund"></a>Shanghai Bund</h2><p>  2020.5.27   这一路都是风景，我就不为你翻山越岭了。</p>
+<p><img src="https://i.loli.net/2020/05/29/RYoksUX8TFKywdc.jpg" alt="wt01.JPG"></p>
 <a id="more"></a>
-
-
-<h2 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h2><ul>
-<li>加粗 <code>Ctrl + B</code></li>
-<li>斜体 <code>Ctrl + I</code></li>
-<li>引用 <code>Ctrl + Q</code></li>
-<li>插入链接 <code>Ctrl + L</code></li>
-<li>插入代码 <code>Ctrl + K</code></li>
-<li>插入图片 <code>Ctrl + G</code></li>
-<li>提升标题 <code>Ctrl + H</code></li>
-<li>有序列表 <code>Ctrl + O</code></li>
-<li>无序列表 <code>Ctrl + U</code></li>
-<li>横线 <code>Ctrl + R</code></li>
-<li>撤销 <code>Ctrl + Z</code></li>
-<li>重做 <code>Ctrl + Y</code></li>
-</ul>
-<h2 id="Markdown及扩展"><a href="#Markdown及扩展" class="headerlink" title="Markdown及扩展"></a>Markdown及扩展</h2><blockquote>
-<p>Markdown 是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档，然后转换成格式丰富的HTML页面。 —— <a href="https://zh.wikipedia.org/wiki/Markdown" target="_blank" rel="noopener">[ 维基百科 ]</a></p>
-</blockquote>
-<p><a href="https://zh.wikipedia.org/wiki/Markdown" target="_blank" rel="noopener">使用简单的符号标识不同的标题，将某些文字标记为<strong>粗体</strong>或者<em>斜体</em>，创建一个</a><a href="http://www.csdn.net/" target="_blank" rel="noopener">链接</a>等，详细语法参考帮助？。</p>
-<h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><p><strong>Markdown　Extra</strong>　表格语法：</p>
-<table>
-<thead>
-<tr>
-<th>项目</th>
-<th>价格</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Computer</td>
-<td>$1600</td>
-</tr>
-<tr>
-<td>Phone</td>
-<td>$12</td>
-</tr>
-<tr>
-<td>Pipe</td>
-<td>$1</td>
-</tr>
-</tbody></table>
-<p>可以使用冒号来定义对齐方式：</p>
-<table>
-<thead>
-<tr>
-<th>项目</th>
-<th>价格</th>
-<th>数量</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Computer</td>
-<td>1600 元</td>
-<td>5</td>
-</tr>
-<tr>
-<td>Phone</td>
-<td>12 元</td>
-<td>12</td>
-</tr>
-<tr>
-<td>Pipe</td>
-<td>1 元</td>
-<td>234</td>
-</tr>
-</tbody></table>
-<h3 id="定义列表"><a href="#定义列表" class="headerlink" title="定义列表"></a>定义列表</h3><p><strong>Markdown　Extra</strong>　定义列表语法： </p>
-<p>项目1</p>
-<p>: 定义 A</p>
-<p>项目2</p>
-<p>: 定义 B</p>
-<p>项目3</p>
-<p>: 定义 C</p>
-<p>: 定义 D</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&gt; 定义D内容</span><br></pre></td></tr></table></figure>
-
-<h3 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h3><p>代码块语法遵循标准markdown代码，例如：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">@requires_authorization</span><br><span class="line">def somefunc(param1&#x3D;&#39;&#39;, param2&#x3D;0):</span><br><span class="line">    &#39;&#39;&#39;A docstring&#39;&#39;&#39;</span><br><span class="line">    if param1 &gt; param2: # interesting</span><br><span class="line">        print &#39;Greater&#39;</span><br><span class="line">    return (param2 - param1 + 1) or None</span><br><span class="line">class SomeClass:</span><br><span class="line">    pass</span><br><span class="line">&gt;&gt;&gt; message &#x3D; &#39;&#39;&#39;interpreter</span><br><span class="line">... prompt&#39;&#39;&#39;</span><br></pre></td></tr></table></figure>
-
-<h2 id="自定义字体颜色-github中看不到颜色"><a href="#自定义字体颜色-github中看不到颜色" class="headerlink" title="自定义字体颜色(github中看不到颜色):"></a>自定义字体颜色(github中看不到颜色):</h2><p>Hello</p>
-<h2 id="删除线"><a href="#删除线" class="headerlink" title="删除线"></a>删除线</h2><p><del>Hello</del></p>
-<p>###脚注 生成一个脚注[^footnote]. [^footnote]: 这里是 <strong>脚注</strong> 的 <em>内容</em>.</p>
-<h3 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h3><p>用 <code>[TOC]</code>来生成目录：</p>
-<p>[TOC]</p>
-<h3 id="数学公式"><a href="#数学公式" class="headerlink" title="数学公式"></a>数学公式</h3><p>使用MathJax渲染<em>LaTex</em> 数学公式，详见<a href="http://math.stackexchange.com/" target="_blank" rel="noopener">math.stackexchange.com</a>.</p>
-<ul>
-<li><p>行内公式，数学公式为：$\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$。</p>
-</li>
-<li><p>块级公式：</p>
-<p>$ x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$</p>
-</li>
-</ul>
-<p>更多LaTex语法请参考   </p>
-<p><a href="http://blog.sina.com.cn/s/blog_5e16f1770100fs38.html" target="_blank" rel="noopener" title="LaTeX技巧10：LaTeX数学公式输入初级入门_LaTeX_Fun_新浪博客,LaTeX_Fun,">LaTeX技巧10：LaTeX数学公式输入初级入门_</a></p>
-<p><a href="https://zhuanlan.zhihu.com/p/24502400" target="_blank" rel="noopener" title="本文同时发布于微信公众号：两个少年的奇幻漂流（ID：Amazing_Adventure）本期的主要内容是数学公式的排版，包含以下内容：行内公式与行间公式数学结构的输入数学符号的输入多行公式排版数学公式的排版是 LaTeX 的…">LaTeX 第五课：数学公式排版 </a></p>
-<h3 id="UML-图"><a href="#UML-图" class="headerlink" title="UML 图:"></a>UML 图:</h3><p>可以渲染序列图：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">张三-&gt;李四: 嘿，小四儿, 写博客了没</span><br><span class="line">Note right of 李四: 李四愣了一下，说：</span><br><span class="line">李四--&gt;张三: 忙得吐血，哪有时间写。</span><br></pre></td></tr></table></figure>
-
-<p>或者流程图：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">st&#x3D;&gt;start: 开始</span><br><span class="line">e&#x3D;&gt;end: 结束</span><br><span class="line">op&#x3D;&gt;operation: 我的操作</span><br><span class="line">cond&#x3D;&gt;condition: 确认？</span><br><span class="line"></span><br><span class="line">st-&gt;op-&gt;cond</span><br><span class="line">cond(yes)-&gt;e</span><br><span class="line">cond(no)-&gt;op</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>关于 <strong>序列图</strong> 语法，参考 <a href="https://zhuanlan.zhihu.com/p/70261692" target="_blank" rel="noopener" title="这篇文章将为大家介绍如何以写代码的方式画时序图（也叫顺序图），同时也会介绍一些时序图基础知识。相比于使用画图工具拖拽画图，用代码画图有什么好处？首先，这种方式非常轻便，无需安装复杂的画图应用。Typora…">Markdown 进阶技能：用代码画时序图 </a>.</li>
-<li>关于 <strong>流程图</strong> 语法，参考<a href="https://zhuanlan.zhihu.com/p/28468233" target="_blank" rel="noopener" title="前言MarkDown的简便性让人越来越喜欢。虽然MarkDown也不是万能的，有些排版等MarkDown做起来也不是那么完美，尤其是涉及图片操作。在日常的文档生产中，难免要用到一些流程图，一般用亿图图示等流程图软件画好了导…">MarkDown不能画流程图？其实很简单 </a>.</li>
-</ul>
+<h5 id="路上"><a href="#路上" class="headerlink" title="路上"></a>路上</h5><p><img src="https://i.loli.net/2020/05/29/S7TF415NRqGsMba.jpg" alt="wt02.JPG"></p>
+<h5 id="外白渡桥"><a href="#外白渡桥" class="headerlink" title="外白渡桥"></a>外白渡桥</h5><p><img src="https://i.loli.net/2020/05/29/wVSj74YhotQZIuT.jpg" alt="wt03.JPG"></p>
+<h5 id="外滩"><a href="#外滩" class="headerlink" title="外滩"></a>外滩</h5><p><img src="https://i.loli.net/2020/05/29/ZByoLbfY2IDVWvq.jpg" alt="wt04.JPG"></p>
+<p><img src="https://i.loli.net/2020/05/29/BamdxKynchEYAwk.jpg" alt="wt05.JPG"></p>
+<h5 id="南京东路"><a href="#南京东路" class="headerlink" title="南京东路"></a>南京东路</h5><p><img src="https://i.loli.net/2020/05/29/RMnzoNePWaqYriD.jpg" alt="wt06.JPG"></p>
+<p><img src="https://i.loli.net/2020/05/29/I7tQwjcE1gpB6Y2.jpg" alt="wt07.JPG"></p>
+<h5 id="终"><a href="#终" class="headerlink" title="终"></a>终</h5><p><img src="https://i.loli.net/2020/05/29/ctOdjR5XEf9KS4G.jpg" alt="wt08.JPG"></p>
+<p><img src="https://i.loli.net/2020/05/29/9jgUiJ1nYQaq2Lw.jpg" alt="wt09.JPG"></p>
 ]]></content>
       <categories>
-        <category>skill</category>
+        <category>personal</category>
       </categories>
       <tags>
-        <tag>Markdown</tag>
+        <tag>Travel</tag>
       </tags>
   </entry>
   <entry>
     <title>私藏的2000G课程</title>
     <url>/2020/05/13/Resources/</url>
-    <content><![CDATA[<img src="https://i.loli.net/2020/05/13/RTixXhmyQYMdJe6.jpg" alt="fx01.jpg" style="zoom:33%;" />
-
+    <content><![CDATA[<p><img src="https://i.loli.net/2020/05/13/RTixXhmyQYMdJe6.jpg" alt="fx01.jpg" style="zoom:33%;" /></p>
 <p>​         本次分享的资源较多，都是小胡同学这几年来的收藏，精挑细选的优质课程，大概可以分为三类。</p>
 <ul>
 <li><p>一是考试类。如专四专八，四六级、教师资格证、教师招聘、初级会计、公务员考试等。</p>
@@ -142,29 +37,23 @@
 </ul>
 <p>​        本次课程大小约2000G，如果你有需要，可以根据文末的步骤领取。以下为部分资源预览，课程永久有效并会继续增加。</p>
 <a id="more"></a>
-
-<h2 id="考试类"><a href="#考试类" class="headerlink" title="考试类"></a>考试类</h2><img src="https://i.loli.net/2020/05/13/wPp3UW7eTHZfqrt.png" alt="fx02.png" style="zoom:80%;" />
-
+<h2 id="考试类"><a href="#考试类" class="headerlink" title="考试类"></a>考试类</h2><p><img src="https://i.loli.net/2020/05/13/wPp3UW7eTHZfqrt.png" alt="fx02.png" style="zoom:80%;" /></p>
 <p>课程名称：《公务员考试》</p>
 <p>官方售价：<strong>¥5998</strong></p>
 <p>课程介绍：国考+联考，笔试+面试，粉笔、华图等机构课程。</p>
-<img src="https://i.loli.net/2020/05/13/PJRmKqy5eF79N6L.png" alt="fx03.png" style="zoom:67%;" />
-
+<p><img src="https://i.loli.net/2020/05/13/PJRmKqy5eF79N6L.png" alt="fx03.png" style="zoom:67%;" /></p>
 <p>课程名称：《四六级》</p>
 <p>官方售价：<strong>¥不知道</strong></p>
 <p>课程介绍：四六级、四家机构，应该够用了。</p>
-<img src="https://i.loli.net/2020/05/13/DzqtHsYFEjSgM3r.png" alt="fx04.png" style="zoom:67%;" />
-
+<p><img src="https://i.loli.net/2020/05/13/DzqtHsYFEjSgM3r.png" alt="fx04.png" style="zoom:67%;" /></p>
 <p>课程名称：《专四专八》</p>
 <p>官方售价：<strong>¥不知道</strong></p>
 <p>课程介绍：英语专业老姐那里要来的</p>
-<img src="https://i.loli.net/2020/05/13/nLtxhZFMoGqQd1K.png" alt="fx05.png" style="zoom:80%;" />
-
+<p><img src="https://i.loli.net/2020/05/13/nLtxhZFMoGqQd1K.png" alt="fx05.png" style="zoom:80%;" /></p>
 <p>课程名称：《教师资格证》</p>
 <p>官方售价：<strong>¥3580</strong></p>
 <p>课程介绍：笔试+面试，认真备考，这套课程足矣。</p>
-<img src="https://i.loli.net/2020/05/13/uH7p6RD1Jagfdrk.png" alt="fx06.png" style="zoom:67%;" />
-
+<p><img src="https://i.loli.net/2020/05/13/uH7p6RD1Jagfdrk.png" alt="fx06.png" style="zoom:67%;" /></p>
 <p>课程名称：《初级会计》</p>
 <p>官方售价：<strong>¥399</strong></p>
 <p>课程介绍：实务+经济法，东奥、斯尔的课程。</p>
@@ -192,33 +81,28 @@
 <p>课程名称：《大咖思维升级课》</p>
 <p>官方售价：<strong>¥99</strong></p>
 <p>课程介绍：搬好小板凳，听雷军、柳传志、周鸿祎、史玉柱等15位大佬吹牛逼。</p>
-<h2 id="技能类"><a href="#技能类" class="headerlink" title="技能类"></a>技能类</h2><img src="https://i.loli.net/2020/05/13/ZshRbpcuwBIx7Gr.png" alt="fx07.png" style="zoom:80%;" />
-
+<h2 id="技能类"><a href="#技能类" class="headerlink" title="技能类"></a>技能类</h2><p><img src="https://i.loli.net/2020/05/13/ZshRbpcuwBIx7Gr.png" alt="fx07.png" style="zoom:80%;" /></p>
 <p>课程名称：《秋叶office》</p>
 <p>官方售价：<strong>¥399</strong></p>
 <p>课程介绍：知名office作家秋叶主讲，课程涵盖PPT、Excel、Word。</p>
-<img src="https://i.loli.net/2020/05/13/5OhNyCZfHapgenl.png" alt="fx08.png" style="zoom:80%;" />
-
+<p><img src="https://i.loli.net/2020/05/13/5OhNyCZfHapgenl.png" alt="fx08.png" style="zoom:80%;" /></p>
 <p>课程名称：《刘杨后期课程》</p>
 <p>官方售价：<strong>¥2888</strong></p>
 <p>课程介绍：商业人像精修+造像之术，摄影后期优质教程。</p>
-<img src="https://i.loli.net/2020/05/13/B16b7ehWZ938GJY.png" alt="fx09.png" style="zoom:67%;" />
-
+<p><img src="https://i.loli.net/2020/05/13/B16b7ehWZ938GJY.png" alt="fx09.png" style="zoom:67%;" /></p>
 <p>课程名称：《Adobe系列课程》</p>
 <p>官方售价：<strong>¥不知道</strong></p>
 <p>课程介绍：这份Adobe教程，是前辈自己整理，涵盖pr、ae、au……。很多教程前辈自己也在看，讲的不好的统统去除，只留精华。</p>
-<img src="https://i.loli.net/2020/05/13/PTLm1XWAveB7ZS8.png" alt="fx10.png" style="zoom:80%;" />
-
+<p><img src="https://i.loli.net/2020/05/13/PTLm1XWAveB7ZS8.png" alt="fx10.png" style="zoom:80%;" /></p>
 <p>课程名称：《李欣频的文案创意课》</p>
 <p>官方售价：<strong>¥199</strong></p>
 <p>课程介绍：文案天后从营销学、广告学、心理学多维度剖析文案，手把手教你写文案。</p>
-<img src="https://i.loli.net/2020/05/13/ihtXqLQrkDTNjSb.png" alt="fx11.png" style="zoom:80%;" />
-
+<p><img src="https://i.loli.net/2020/05/13/ihtXqLQrkDTNjSb.png" alt="fx11.png" style="zoom:80%;" /></p>
 <p>课程名称：《UI设计全能班》</p>
 <p>官方售价：<strong>¥7980</strong></p>
 <p>课程介绍：像素范儿联合高高手打造，从0到1系统学习UI。</p>
 <p>​      资源是通过网盘分享，容易被和谐，建议优先保存需要的资源。分享的课程大部分都是解压好的文件，可直接在线观看。在此附上分享网盘的群哦。</p>
-<img src="https://i.loli.net/2020/05/13/ue8sXHVNYrc1wai.png" alt="fx12.png" style="zoom:50%;" />
+<p><img src="https://i.loli.net/2020/05/13/ue8sXHVNYrc1wai.png" alt="fx12.png" style="zoom:50%;" /></p>
 ]]></content>
       <categories>
         <category>Share</category>
@@ -228,12 +112,139 @@
       </tags>
   </entry>
   <entry>
+    <title>Markdown基础</title>
+    <url>/2020/05/12/Markdown-basic/</url>
+    <content><![CDATA[<p>附 本文的Markdown源码:<br><a href="https://github.com/johnhu94/Markdown" target="_blank" rel="noopener" title="Markdown基础整理. Contribute to johnhu94/Markdown development by creating an account on GitHub.">GitHub - johnhu94/Markdown: Markdown基础整理</a><br>点击”Raw”可看到源码，欢迎fork或star~</p>
+<ul>
+<li><strong>Markdown和扩展Markdown简洁的语法</strong></li>
+<li><strong>代码块高亮</strong></li>
+<li><strong>图片链接和图片上传</strong></li>
+<li><strong><em>LaTex\</em>数学公式</strong></li>
+<li><strong>导入导出Markdown文件</strong></li>
+<li><strong>丰富的快捷键</strong></li>
+</ul>
+<a id="more"></a>
+<h2 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h2><ul>
+<li>加粗 <code>Ctrl + B</code></li>
+<li>斜体 <code>Ctrl + I</code></li>
+<li>引用 <code>Ctrl + Q</code></li>
+<li>插入链接 <code>Ctrl + L</code></li>
+<li>插入代码 <code>Ctrl + K</code></li>
+<li>插入图片 <code>Ctrl + G</code></li>
+<li>提升标题 <code>Ctrl + H</code></li>
+<li>有序列表 <code>Ctrl + O</code></li>
+<li>无序列表 <code>Ctrl + U</code></li>
+<li>横线 <code>Ctrl + R</code></li>
+<li>撤销 <code>Ctrl + Z</code></li>
+<li>重做 <code>Ctrl + Y</code></li>
+</ul>
+<h2 id="Markdown及扩展"><a href="#Markdown及扩展" class="headerlink" title="Markdown及扩展"></a>Markdown及扩展</h2><blockquote>
+<p>Markdown 是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档，然后转换成格式丰富的HTML页面。 —— <a href="https://zh.wikipedia.org/wiki/Markdown" target="_blank" rel="noopener">[ 维基百科 ]</a></p>
+</blockquote>
+<p><a href="https://zh.wikipedia.org/wiki/Markdown" target="_blank" rel="noopener">使用简单的符号标识不同的标题，将某些文字标记为<strong>粗体</strong>或者<em>斜体</em>，创建一个</a><a href="http://www.csdn.net/" target="_blank" rel="noopener">链接</a>等，详细语法参考帮助？。</p>
+<h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><p><strong>Markdown　Extra</strong>　表格语法：</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>价格</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Computer</td>
+<td>$1600</td>
+</tr>
+<tr>
+<td>Phone</td>
+<td>$12</td>
+</tr>
+<tr>
+<td>Pipe</td>
+<td>$1</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>可以使用冒号来定义对齐方式：</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>价格</th>
+<th>数量</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Computer</td>
+<td>1600 元</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Phone</td>
+<td>12 元</td>
+<td>12</td>
+</tr>
+<tr>
+<td>Pipe</td>
+<td>1 元</td>
+<td>234</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="定义列表"><a href="#定义列表" class="headerlink" title="定义列表"></a>定义列表</h3><p><strong>Markdown　Extra</strong>　定义列表语法： </p>
+<p>项目1</p>
+<p>: 定义 A</p>
+<p>项目2</p>
+<p>: 定义 B</p>
+<p>项目3</p>
+<p>: 定义 C</p>
+<p>: 定义 D</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&gt; 定义D内容</span><br></pre></td></tr></table></figure>
+<h3 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h3><p>代码块语法遵循标准markdown代码，例如：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">@requires_authorization</span><br><span class="line">def somefunc(param1&#x3D;&#39;&#39;, param2&#x3D;0):</span><br><span class="line">    &#39;&#39;&#39;A docstring&#39;&#39;&#39;</span><br><span class="line">    if param1 &gt; param2: # interesting</span><br><span class="line">        print &#39;Greater&#39;</span><br><span class="line">    return (param2 - param1 + 1) or None</span><br><span class="line">class SomeClass:</span><br><span class="line">    pass</span><br><span class="line">&gt;&gt;&gt; message &#x3D; &#39;&#39;&#39;interpreter</span><br><span class="line">... prompt&#39;&#39;&#39;</span><br></pre></td></tr></table></figure>
+<h2 id="自定义字体颜色-github中看不到颜色"><a href="#自定义字体颜色-github中看不到颜色" class="headerlink" title="自定义字体颜色(github中看不到颜色):"></a>自定义字体颜色(github中看不到颜色):</h2><p>Hello</p>
+<h2 id="删除线"><a href="#删除线" class="headerlink" title="删除线"></a>删除线</h2><p><del>Hello</del></p>
+<p>###脚注 生成一个脚注<sup><a href="#fn_footnote" id="reffn_footnote">footnote</a></sup>. <sup><a href="#fn_footnote" id="reffn_footnote">footnote</a></sup>: 这里是 <strong>脚注</strong> 的 <em>内容</em>.</p>
+<h3 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h3><p>用 <code>[TOC]</code>来生成目录：</p>
+<p>[TOC]</p>
+<h3 id="数学公式"><a href="#数学公式" class="headerlink" title="数学公式"></a>数学公式</h3><p>使用MathJax渲染<em>LaTex</em> 数学公式，详见<a href="http://math.stackexchange.com/" target="_blank" rel="noopener">math.stackexchange.com</a>.</p>
+<ul>
+<li><p>行内公式，数学公式为：$\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$。</p>
+</li>
+<li><p>块级公式：</p>
+<p>$ x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$</p>
+</li>
+</ul>
+<p>更多LaTex语法请参考   </p>
+<p><a href="http://blog.sina.com.cn/s/blog_5e16f1770100fs38.html" target="_blank" rel="noopener" title="LaTeX技巧10：LaTeX数学公式输入初级入门_LaTeX_Fun_新浪博客,LaTeX_Fun,">LaTeX技巧10：LaTeX数学公式输入初级入门_</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/24502400" target="_blank" rel="noopener" title="本文同时发布于微信公众号：两个少年的奇幻漂流（ID：Amazing_Adventure）本期的主要内容是数学公式的排版，包含以下内容：行内公式与行间公式数学结构的输入数学符号的输入多行公式排版数学公式的排版是 LaTeX 的…">LaTeX 第五课：数学公式排版 </a></p>
+<h3 id="UML-图"><a href="#UML-图" class="headerlink" title="UML 图:"></a>UML 图:</h3><p>可以渲染序列图：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">张三-&gt;李四: 嘿，小四儿, 写博客了没</span><br><span class="line">Note right of 李四: 李四愣了一下，说：</span><br><span class="line">李四--&gt;张三: 忙得吐血，哪有时间写。</span><br></pre></td></tr></table></figure>
+<p>或者流程图：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">st&#x3D;&gt;start: 开始</span><br><span class="line">e&#x3D;&gt;end: 结束</span><br><span class="line">op&#x3D;&gt;operation: 我的操作</span><br><span class="line">cond&#x3D;&gt;condition: 确认？</span><br><span class="line"></span><br><span class="line">st-&gt;op-&gt;cond</span><br><span class="line">cond(yes)-&gt;e</span><br><span class="line">cond(no)-&gt;op</span><br></pre></td></tr></table></figure>
+<ul>
+<li>关于 <strong>序列图</strong> 语法，参考 <a href="https://zhuanlan.zhihu.com/p/70261692" target="_blank" rel="noopener" title="这篇文章将为大家介绍如何以写代码的方式画时序图（也叫顺序图），同时也会介绍一些时序图基础知识。相比于使用画图工具拖拽画图，用代码画图有什么好处？首先，这种方式非常轻便，无需安装复杂的画图应用。Typora…">Markdown 进阶技能：用代码画时序图 </a>.</li>
+<li>关于 <strong>流程图</strong> 语法，参考<a href="https://zhuanlan.zhihu.com/p/28468233" target="_blank" rel="noopener" title="前言MarkDown的简便性让人越来越喜欢。虽然MarkDown也不是万能的，有些排版等MarkDown做起来也不是那么完美，尤其是涉及图片操作。在日常的文档生产中，难免要用到一些流程图，一般用亿图图示等流程图软件画好了导…">MarkDown不能画流程图？其实很简单 </a>.</li>
+</ul>
+]]></content>
+      <categories>
+        <category>skill</category>
+      </categories>
+      <tags>
+        <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>上海江浦公园随记</title>
     <url>/2020/05/15/SH-Jiangpu-Park/</url>
     <content><![CDATA[<h2 id="上海江浦公园"><a href="#上海江浦公园" class="headerlink" title="上海江浦公园"></a>上海江浦公园</h2><h2 id="Shanghai-Jiangpu-Park"><a href="#Shanghai-Jiangpu-Park" class="headerlink" title="Shanghai Jiangpu Park"></a>Shanghai Jiangpu Park</h2><p>  2020.5.15   阳光正好，生活不是为了赶路，而是为了感受路边的美景，世间最美好的不过就是好山，好水及好景。</p>
 <p><img src="https://i.loli.net/2020/05/15/ryw2RWVJl74YoHp.jpg" alt="jp01.jpg"></p>
 <a id="more"></a>
-
 <h3 id="睡莲"><a href="#睡莲" class="headerlink" title="睡莲"></a>睡莲</h3><p><img src="https://i.loli.net/2020/05/15/m9AsQKwzoVThRl3.jpg" alt="jp02.JPG"></p>
 <h3 id="杜鹃"><a href="#杜鹃" class="headerlink" title="杜鹃"></a>杜鹃</h3><p><img src="https://i.loli.net/2020/05/15/dxOjQ5fNltayg3u.png" alt="jp03.png"></p>
 <h3 id="海棠"><a href="#海棠" class="headerlink" title="海棠"></a>海棠</h3><p><img src="https://i.loli.net/2020/05/15/RyuAx7Noa6nHMTs.png" alt="jp04.png"></p>
@@ -248,6 +259,66 @@
       </tags>
   </entry>
   <entry>
+    <title>六个不为人知的奇技淫巧，真得劲！</title>
+    <url>/2020/05/15/Skill/</url>
+    <content><![CDATA[<p><img src="https://i.loli.net/2020/05/15/AE1PJYCcRZoUvhz.png" alt="jq01.png" style="zoom:50%;" /></p>
+<p>给大家分享几个非常实用的电脑小技巧。</p>
+<a id="more"></a>
+<center><font color=Orange size=6><font face="STCAIYUN">1. 放大镜</font></font></center>
+
+<p>​      Win10系统自带有放大镜功能，按住<strong>Win</strong> + <strong>“+”</strong>即可开启。首次打开，视图默认的是全屏，我们需要<strong>将视图修改为镜头</strong>。</p>
+<p><img src="https://i.loli.net/2020/05/15/2cjeTdm1wQsMq9O.gif" alt="jq02.gif" style="zoom:80%;" /></p>
+<p>​      使用过程还可以调整放大倍数。这个功能对于制作教程、讲课以及眼神不好的朋友，非常实用。关闭放大镜功能只需按<strong>Win+ Esc</strong>。</p>
+<center><font color=Orange size=6><font face="STCAIYUN">2. 任意形状截图</font></font></center>
+
+<p>​      win10同样自带截图功能，快捷键 <strong>Win+Shift+S</strong>，提供矩形截图、窗口截图、全屏截图以及任意形状截图。</p>
+<p><img src="https://i.loli.net/2020/05/15/e2zZN4Bx51VSsk9.gif" alt="jq03.gif" style="zoom:80%;" /></p>
+<center><font color=Orange size=6><font face="STCAIYUN">3. 干掉生僻字</font></font></center>
+
+<p>​      对于不认识的生僻字，可以在搜狗输入法中，采用<strong>“u+汉字组成部分汉字拼音”</strong>的方式打出来，而且他还有对应的拼音。</p>
+<p>​      上面的话比较拗口，举个例子你就懂了。比如：骉这个字，就可以用 <strong>“u + ma ma ma”</strong> 打出来。魑这个字，就可以用 <strong>“ u+gui li ”</strong>。</p>
+<p><img src="https://i.loli.net/2020/05/15/fyzhqM3nxAbvFga.gif" alt="jq04.gif" style="zoom:80%;" /></p>
+<center><font color=Orange size=6><font face="STCAIYUN">4. 网页长截图</font></font></center>
+
+<p>​       在Chrome 59中已经支持对整个页面进行截屏</p>
+<p>1.在你要截屏的网站上右键-检查</p>
+<p>2.单击一个有手机和平板的图标，进入 Device Toolbar</p>
+<p><img src="https://i.loli.net/2020/05/15/Doyk5JZtUfIeLsH.jpg" alt="jq05.jpg"></p>
+<p>3.在最上面选中模拟的设备分辨率，比如我选了iPad Pro</p>
+<p><img src="https://i.loli.net/2020/05/15/KZWydswfkA3CNuG.jpg" alt="jq06.jpg" style="zoom:50%;" /></p>
+<p>4.单击最右侧的三个点，选择 Capture full size screenshot</p>
+<p><img src="https://i.loli.net/2020/05/15/fzJ6KqMaxkhnveL.jpg" alt="jq07.jpg" style="zoom:80%;" /></p>
+<p>5.一张整个页面的截图就会直接下载到你的电脑</p>
+<p><img src="https://i.loli.net/2020/05/15/3WyQkugCot1dzcM.jpg" alt="jq08.jpg" style="zoom:80%;" /></p>
+<center><font color=Orange size=6><font face="STCAIYUN">5. 恢复关闭网页</font></font></center>
+
+<p>​      快捷键<strong>Ctrl +Shift +T</strong>，可以恢复上一次关闭的网页。比如领导来到了，关闭了某网站网页，等领导走后可以通过该方法恢复。</p>
+<p><img src="https://i.loli.net/2020/05/15/cDpF1j9L2uxdes6.gif" alt="jq09.gif" style="zoom:80%;" /></p>
+<center><font color=Orange size=6><font face="STCAIYUN">6. 显示隐藏密码</font></font></center>
+
+<p>很多网站的密码都是一串 “<strong><strong>*</strong></strong>” ，那怎么才能知道具体密码呢。以百度网盘为例，打开百度网盘网页，密码是星号，无法查看。</p>
+<p><img src="https://i.loli.net/2020/05/15/shgmUYWfPIbVoBa.png" alt="jq10.png" style="zoom:80%;" /></p>
+<p>在<strong>密码栏单击鼠标右键</strong>。记住，一定是<strong>在密码栏单击</strong>鼠标右键。</p>
+<p><img src="https://i.loli.net/2020/05/15/X9t27zGNp3IlH4x.png" alt="jq11.png" style="zoom:80%;" /></p>
+<p>选择<strong>审查元素</strong>，自动进入代码页。</p>
+<p><img src="https://i.loli.net/2020/05/15/DpZqCW2wiT1yeKu.png" alt="jq12.png" style="zoom:80%;" /></p>
+<p>直接在默认选择的那一栏进行修改，将<strong>type=”password”</strong> 改成 <strong>type=”test”</strong> 。</p>
+<p>放大看一看，只需将 <strong>password</strong> 改成 <strong>test</strong> 就可。</p>
+<p><img src="https://i.loli.net/2020/05/15/hK2O7t6z8ul3dQH.png" alt="jq13.png" style="zoom:80%;" /></p>
+<p>为照顾老年朋友，小胡就再放大一下。</p>
+<p><img src="https://i.loli.net/2020/05/15/9yUXKNE7q8pbvtx.png" alt="jq14.png" style="zoom:80%;" /></p>
+<p>修改完成后，右上角点击 x 。</p>
+<p><img src="https://i.loli.net/2020/05/15/3V7IovusjNKBylT.png" alt="jq15.png" style="zoom:80%;" /></p>
+<p>返回就能看到，密码已经从一串星号显示为具体的文字了。</p>
+]]></content>
+      <categories>
+        <category>Share</category>
+      </categories>
+      <tags>
+        <tag>Resources</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>上海新场古镇随记</title>
     <url>/2020/05/14/SH-Xinchang-Ancient-Town/</url>
     <content><![CDATA[<h2 id="上海新场古镇"><a href="#上海新场古镇" class="headerlink" title="上海新场古镇"></a>上海新场古镇</h2><h2 id="Shanghai-Xinchang-Ancient-Town"><a href="#Shanghai-Xinchang-Ancient-Town" class="headerlink" title="Shanghai Xinchang Ancient Town"></a>Shanghai Xinchang Ancient Town</h2><p>  2020.5.12   春天来了，也许已经过去了。天竟晴了，风也停了，阳光很好。</p>
@@ -255,7 +326,6 @@
 <p><img src="https://i.loli.net/2020/05/14/Uu28EwkTyigRNqI.jpg" alt="xy05.jpg"></p>
 <h5 id="古桥、古楼"><a href="#古桥、古楼" class="headerlink" title="古桥、古楼"></a>古桥、古楼</h5><p><img src="https://i.loli.net/2020/05/12/4Bm5bjcrzM7OLlU.jpg" alt="xy01.jpg"></p>
 <a id="more"></a>
-
 <h5 id="心愿"><a href="#心愿" class="headerlink" title="心愿"></a>心愿</h5><p><img src="https://i.loli.net/2020/05/12/HyQ2tkVEhlZ5YPL.jpg" alt="xy02.jpg"></p>
 <h5 id="九成"><a href="#九成" class="headerlink" title="九成"></a>九成</h5><p><img src="https://i.loli.net/2020/05/12/rn87UGjmRLabICE.jpg" alt="xy03.jpg"></p>
 <h5 id="回忆"><a href="#回忆" class="headerlink" title="回忆"></a>回忆</h5><p><img src="https://i.loli.net/2020/05/12/OdqMQZ6TXGz98yh.jpg" alt="xy04.jpg"></p>
@@ -265,86 +335,6 @@
       </categories>
       <tags>
         <tag>Travel</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>六个不为人知的奇技淫巧，真得劲！</title>
-    <url>/2020/05/15/Skill/</url>
-    <content><![CDATA[<img src="https://i.loli.net/2020/05/15/AE1PJYCcRZoUvhz.png" alt="jq01.png" style="zoom:50%;" />
-
-<p>给大家分享几个非常实用的电脑小技巧。</p>
-<a id="more"></a>
-
-<center><font color=Orange size=6><font face="STCAIYUN">1. 放大镜</font></font></center>
-
-<p>​      Win10系统自带有放大镜功能，按住<strong>Win</strong> + <strong>“+”</strong>即可开启。首次打开，视图默认的是全屏，我们需要<strong>将视图修改为镜头</strong>。</p>
-<img src="https://i.loli.net/2020/05/15/2cjeTdm1wQsMq9O.gif" alt="jq02.gif" style="zoom:80%;" />
-
-<p>​      使用过程还可以调整放大倍数。这个功能对于制作教程、讲课以及眼神不好的朋友，非常实用。关闭放大镜功能只需按<strong>Win+ Esc</strong>。</p>
-<center><font color=Orange size=6><font face="STCAIYUN">2. 任意形状截图</font></font></center>
-
-<p>​      win10同样自带截图功能，快捷键 <strong>Win+Shift+S</strong>，提供矩形截图、窗口截图、全屏截图以及任意形状截图。</p>
-<img src="https://i.loli.net/2020/05/15/e2zZN4Bx51VSsk9.gif" alt="jq03.gif" style="zoom:80%;" />
-
-
-
-<center><font color=Orange size=6><font face="STCAIYUN">3. 干掉生僻字</font></font></center>
-
-<p>​      对于不认识的生僻字，可以在搜狗输入法中，采用<strong>“u+汉字组成部分汉字拼音”</strong>的方式打出来，而且他还有对应的拼音。</p>
-<p>​      上面的话比较拗口，举个例子你就懂了。比如：骉这个字，就可以用 <strong>“u + ma ma ma”</strong> 打出来。魑这个字，就可以用 <strong>“ u+gui li ”</strong>。</p>
-<img src="https://i.loli.net/2020/05/15/fyzhqM3nxAbvFga.gif" alt="jq04.gif" style="zoom:80%;" />
-
-
-<center><font color=Orange size=6><font face="STCAIYUN">4. 网页长截图</font></font></center>
-
-<p>​       在Chrome 59中已经支持对整个页面进行截屏</p>
-<p>1.在你要截屏的网站上右键-检查</p>
-<p>2.单击一个有手机和平板的图标，进入 Device Toolbar</p>
-<p><img src="https://i.loli.net/2020/05/15/Doyk5JZtUfIeLsH.jpg" alt="jq05.jpg"></p>
-<p>3.在最上面选中模拟的设备分辨率，比如我选了iPad Pro</p>
-<img src="https://i.loli.net/2020/05/15/KZWydswfkA3CNuG.jpg" alt="jq06.jpg" style="zoom:50%;" />
-
-<p>4.单击最右侧的三个点，选择 Capture full size screenshot</p>
-<img src="https://i.loli.net/2020/05/15/fzJ6KqMaxkhnveL.jpg" alt="jq07.jpg" style="zoom:80%;" />
-
-<p>5.一张整个页面的截图就会直接下载到你的电脑</p>
-<img src="https://i.loli.net/2020/05/15/3WyQkugCot1dzcM.jpg" alt="jq08.jpg" style="zoom:80%;" />
-
-<center><font color=Orange size=6><font face="STCAIYUN">5. 恢复关闭网页</font></font></center>
-
-<p>​      快捷键<strong>Ctrl +Shift +T</strong>，可以恢复上一次关闭的网页。比如领导来到了，关闭了某网站网页，等领导走后可以通过该方法恢复。</p>
-<img src="https://i.loli.net/2020/05/15/cDpF1j9L2uxdes6.gif" alt="jq09.gif" style="zoom:80%;" />
-
-
-
-<center><font color=Orange size=6><font face="STCAIYUN">6. 显示隐藏密码</font></font></center>
-
-<p>很多网站的密码都是一串 “<strong>*****</strong>” ，那怎么才能知道具体密码呢。以百度网盘为例，打开百度网盘网页，密码是星号，无法查看。</p>
-<img src="https://i.loli.net/2020/05/15/shgmUYWfPIbVoBa.png" alt="jq10.png" style="zoom:80%;" />
-
-<p>在<strong>密码栏单击鼠标右键</strong>。记住，一定是<strong>在密码栏单击</strong>鼠标右键。</p>
-<img src="https://i.loli.net/2020/05/15/X9t27zGNp3IlH4x.png" alt="jq11.png" style="zoom:80%;" />
-
-<p>选择<strong>审查元素</strong>，自动进入代码页。</p>
-<img src="https://i.loli.net/2020/05/15/DpZqCW2wiT1yeKu.png" alt="jq12.png" style="zoom:80%;" />
-
-<p>直接在默认选择的那一栏进行修改，将<strong>type=”password”</strong> 改成 <strong>type=”test”</strong> 。</p>
-<p>放大看一看，只需将 <strong>password</strong> 改成 <strong>test</strong> 就可。</p>
-<img src="https://i.loli.net/2020/05/15/hK2O7t6z8ul3dQH.png" alt="jq13.png" style="zoom:80%;" />
-
-<p>为照顾老年朋友，小胡就再放大一下。</p>
-<img src="https://i.loli.net/2020/05/15/9yUXKNE7q8pbvtx.png" alt="jq14.png" style="zoom:80%;" />
-
-<p>修改完成后，右上角点击 x 。</p>
-<img src="https://i.loli.net/2020/05/15/3V7IovusjNKBylT.png" alt="jq15.png" style="zoom:80%;" />
-
-<p>返回就能看到，密码已经从一串星号显示为具体的文字了。</p>
-]]></content>
-      <categories>
-        <category>Share</category>
-      </categories>
-      <tags>
-        <tag>Resources</tag>
       </tags>
   </entry>
   <entry>
@@ -360,35 +350,6 @@
       </tags>
   </entry>
   <entry>
-    <title>TeX技巧系列（一）</title>
-    <url>/2020/05/14/TeX-skill-1/</url>
-    <content><![CDATA[<h1 id="TeX技巧系列（一）"><a href="#TeX技巧系列（一）" class="headerlink" title="TeX技巧系列（一）"></a>TeX技巧系列（一）</h1><h2 id="TeXLive-2020-WinEdt10-3-SumatraPDF配置"><a href="#TeXLive-2020-WinEdt10-3-SumatraPDF配置" class="headerlink" title="TeXLive 2020 +WinEdt10.3+SumatraPDF配置"></a>TeXLive 2020 +WinEdt10.3+SumatraPDF配置</h2><p>​         首先需要先分别把TeXLive 2020、WinEdt和SumatraPDF分别下载并安装。TeXLive 2020文件比较大，可以参考我的博客<strong>TeX技巧系列（零）</strong>安装。WinEdt10.3和SumatraPDF都是比较轻量级的应用，安装比较方便，我就不再赘述。其中WinEdt是一款收费的应用，只有30天的试用期， 这里我给出链接，大家自己下载哦。</p>
-<p>百度网盘链接<a href="https://pan.baidu.com/s/1RhXdKPgrRapqmQKafEEFfA" target="_blank" rel="noopener">https://pan.baidu.com/s/1RhXdKPgrRapqmQKafEEFfA</a></p>
-<p>​           提取码：ohqo </p>
-<a id="more"></a>
-
-<ol>
-<li>下载完成之后就是更改WinEdt10.3的配置了。先配置编译引擎为TeXLive 2020。选择Options-&gt;Execution Modes-&gt;Tex System，把TeX Root更改为TeX Live 的安装路径，把TeX Bin中的路径更改为TeX Live子文件夹”\bin\win32”，后面的两个选择Auto-detect就可以了，点击应用后会自动刷新编译器。不会的看下面图示。</li>
-</ol>
-<img src="https://i.loli.net/2020/05/14/9PSZzwmqihtLarg.png" alt="tex1-1.png" style="zoom:80%;" />
-
-<ol start="2">
-<li>然后更新PDF预览器。在Options-&gt;Execution Modes-&gt;PDF Viewer 中把包含SumatraPDF.exe的路径替换原来路径，这样就行了。选择SumatraPDF是因为这个阅读器非常轻量，而且能够支持反向搜索，点击PDF中的文字可以快速定位到相应的代码位置，非常方便。 </li>
-</ol>
-<img src="https://i.loli.net/2020/05/14/euCndcVTfgK63DF.png" alt="tex1-2.png" style="zoom:80%;" />
-
-
-
-<p>以上就是我们开始TeX计划的全部准备啦，下面我们就开始编写吧。</p>
-]]></content>
-      <categories>
-        <category>skill</category>
-      </categories>
-      <tags>
-        <tag>TeX</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>TeX技巧系列（零）</title>
     <url>/2020/05/14/TeX-skill-0/</url>
     <content><![CDATA[<ul>
@@ -396,7 +357,6 @@
 </ul>
 <h2 id="TeXLive-2020-下载与安装"><a href="#TeXLive-2020-下载与安装" class="headerlink" title="TeXLive 2020 下载与安装"></a>TeXLive 2020 下载与安装</h2><p>​     该软件最新发布时间是在前天4月10号，我就将旧版本卸载了，找到<code>C:\texlive\2019\tlpkg\installer\uninst.bat</code>然后双击执行即可，并将其环境变量移出，用起开始我们2020版本的下载与安装，<code>整个流程大概就是1个小时不到ok</code>。</p>
 <a id="more"></a>
-
 <h4 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h4><ol>
 <li><p>选择一个国内源，这里我用的是腾讯云，地址贴下：<br><a href="https://mirrors.cloud.tencent.com/CTAN/systems/texlive/Images/texlive2020.iso" target="_blank" rel="noopener">https://mirrors.cloud.tencent.com/CTAN/systems/texlive/Images/texlive2020.iso</a></p>
 </li>
@@ -409,28 +369,19 @@
 <h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><ol>
 <li>点击texlive2020.iso，如果是win10系统，双击打开即可；如果是<code>win7</code>系统的话，使用软件<code>WinCDEEmu</code>挂载，然后双击打开其中的<code>install-tl-windows.bat</code>，不过按以往版本的镜像文件里面是有<code>install-tl-windows.bat</code>和<code>install-tl-advanced.bat</code>这两个脚本，双击其中任何一个都可以在<code>Windows</code>上自动安装。</li>
 </ol>
-<img src="https://i.loli.net/2020/05/14/8RFnHEMVuDg2OGU.png" alt="tex0-2.png" style="zoom:80%;" />
-
-<ol start="2">
-<li>可修改安装路径，一般默认<code>C</code>盘，如果你空间不够可考虑其它盘，其它设置可点击左下角 <code>Advanced</code>.<img src="https://i.loli.net/2020/05/14/il5fN6jxvEPHIAC.png" alt="tex0-3.png" style="zoom:80%;" />
-
-</li>
+<p><img src="https://i.loli.net/2020/05/14/8RFnHEMVuDg2OGU.png" alt="tex0-2.png" style="zoom:80%;" /></p>
+<ol>
+<li>可修改安装路径，一般默认<code>C</code>盘，如果你空间不够可考虑其它盘，其它设置可点击左下角 <code>Advanced</code>.<br><img src="https://i.loli.net/2020/05/14/il5fN6jxvEPHIAC.png" alt="tex0-3.png" style="zoom:80%;" /></li>
 </ol>
-<img src="https://i.loli.net/2020/05/14/GxiZNV6hTwnJ8qD.png" alt="tex0-4.png" style="zoom: 67%;" />
-
-<ol start="3">
+<p><img src="https://i.loli.net/2020/05/14/GxiZNV6hTwnJ8qD.png" alt="tex0-4.png" style="zoom: 67%;" /></p>
+<ol>
 <li><p>等待半个小时的过程……</p>
-<img src="https://i.loli.net/2020/05/14/pjrCUtuzS1xGNFA.png" alt="tex0-5.png" style="zoom:80%;" />
+<p><img src="https://i.loli.net/2020/05/14/pjrCUtuzS1xGNFA.png" alt="tex0-5.png" style="zoom:80%;" /></p>
 </li>
 <li><p>安装完整</p>
 </li>
 </ol>
-<img src="https://i.loli.net/2020/05/14/vgUu2W3bnawAHSC.png" alt="tex0-6.png" style="zoom:80%;" />
-
-
-
-
-
+<p><img src="https://i.loli.net/2020/05/14/vgUu2W3bnawAHSC.png" alt="tex0-6.png" style="zoom:80%;" /></p>
 <h4 id="不同编辑器测试"><a href="#不同编辑器测试" class="headerlink" title="不同编辑器测试"></a>不同编辑器测试</h4><ol>
 <li><p>TeXstudio</p>
 <p><img src="https://i.loli.net/2020/05/14/BqWHGrxR38QFvYN.png" alt="tex0-7.png"></p>
@@ -440,7 +391,7 @@
 <p><img src="https://i.loli.net/2020/05/14/vRMDywz83V57tAi.png" alt="tex0-8.png"></p>
 <p>3.Sublime Text</p>
 <p><img src="https://i.loli.net/2020/05/14/xPwysoMBT2ntG86.png" alt="tex0-9.png"></p>
-<ol start="4">
+<ol>
 <li><p>WinEdt 10.3</p>
 <p><img src="https://i.loli.net/2020/05/14/jXfaV2eR9yxDJvg.png" alt="tex0-10.png"></p>
 </li>
@@ -455,32 +406,6 @@
       </tags>
   </entry>
   <entry>
-    <title>软件推荐系列（零）</title>
-    <url>/2020/05/16/software0/</url>
-    <content><![CDATA[<h2 id="迅捷PDF免安装版"><a href="#迅捷PDF免安装版" class="headerlink" title="迅捷PDF免安装版"></a>迅捷PDF免安装版</h2><p>​      迅捷PDF转换器是一款功能强大、界面简洁、操作简单的PDF转换成Word或word转换成pdf的软件。软件具备快速转换、批量转换，高质量识别等功能。本款软件为免安装版，大家双击即可运行软件，大家可以创建一个快捷方式添加到桌面，方便下次使用。首先我们先来使用文件夹中的注册机，激活一下软件。</p>
-<a id="more"></a>
-
-<img src="https://i.loli.net/2020/05/16/AQdNqWcV6k9ifsC.png" alt="pdf01.png" style="zoom:50%;" />
-
-<p>​      点击注册，大家先复制软件中的机器码，然后通过注册机，注册一个注册码。然后将注册码复制粘贴进软件中激活界面即可成功。</p>
-<img src="https://i.loli.net/2020/05/16/tRMHNYJWZpzPAer.png" alt="pdf02.png" style="zoom:67%;" />
-
-<img src="https://i.loli.net/2020/05/16/qtIEacVDrsTug7o.png" alt="pdf03.png" style="zoom:67%;" />
-
-<img src="https://i.loli.net/2020/05/16/B78MGiJDEAYgIFS.png" alt="pdf04.png" style="zoom:67%;" />
-
-
-<p>​      一切都完成之后，软件内的所有软件就可以正常使用，文件转word、ppt、图片等，除此之外还支持电子书格式转换，功能非常的全面。<br>​     最后附上百度网盘的链接   <a href="https://pan.baidu.com/s/1ZXmDWNm81-2t6pjnpXSWyQ" target="_blank" rel="noopener">https://pan.baidu.com/s/1ZXmDWNm81-2t6pjnpXSWyQ</a><br>​                                     提取码   tpn0</p>
-<p>​                      该系列不定时更新哦，小胡只要遇到好的软件会给大家分享哒！！！</p>
-]]></content>
-      <categories>
-        <category>Share</category>
-      </categories>
-      <tags>
-        <tag>PDF</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>爱是你 &lt;font color=red size=7&gt;&amp;hearts;&lt;/font&gt; 我</title>
     <url>/2020/05/14/love/</url>
     <content><![CDATA[<p>​       </p>
@@ -490,18 +415,15 @@
 <p>有人曾经问过我：暗恋究竟算不算一种形式的爱？</p>
 <p>只是简单地爱着，纯粹的爱着，悄无声息的爱着。</p>
 <p>我想，这就是对于暗恋最好的诠释吧！（初中高中都有吧，哈哈）</p>
-<img src="https://i.loli.net/2020/05/14/pzGRyOMfk3IBEmx.jpg" alt="10.jpg" style="zoom:80%;" />
-
+<p><img src="https://i.loli.net/2020/05/14/pzGRyOMfk3IBEmx.jpg" alt="10.jpg" style="zoom:80%;" /></p>
 <a id="more"></a>
-
 <h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><p>世界上因为有了许许多多不同的人，于是，就有了各种各样不同形式的爱。</p>
 <p>人生在世，总有一天我们会遇到我们爱的人，也会遇到爱我们的人，以及我们讨厌的人和讨厌我们的人。</p>
 <p>然而不管是爱或被爱，讨厌或被讨厌，都是我们生存在这个世间里非常重要且无法避免的东西，尤其是爱和被爱。</p>
 <p><strong>因为有爱，才会有我们；因为有爱，我们才会存在。</strong></p>
 <p>正是因为爱的出现，才使得用外表冷漠来保护内心柔软的我们不再假装坚强，我们才勇于把内心最真实柔软的部分袒露给最爱的人，从而变得更加温暖而富于人情。</p>
 <p>于是在我们的生命里，岚岚众山之中除了无尽的暗夜之外，从此出现了星星点点的温暖桔光。</p>
-<img src="https://i.loli.net/2020/05/14/yPzpJaU9xDZn8EN.jpg" alt="08.jpg" style="zoom:50%;" />
-
+<p><img src="https://i.loli.net/2020/05/14/yPzpJaU9xDZn8EN.jpg" alt="08.jpg" style="zoom:50%;" /></p>
 <p>我也经常看到有人说：我不需要爱与被爱，我只想一个人过自由的生活。</p>
 <p>然而我对此的理解却是，我们不需要快餐爱情和各取所需，<strong>我们需要的是更高级别的爱情和更深入灵魂的羁绊。</strong></p>
 <p>因为人生在世，根本不可能没有对爱的需求。</p>
@@ -516,10 +438,7 @@
 <p>爱情因为唯一性而显得珍贵，却也因为排他性而显得脆弱。这看似是统一，实则是一个矛盾。</p>
 <p>如果非要给失恋找一个借口，那根源就是人类自私的本性，决定了我们爱自己永远是多于爱对方的。</p>
 <p>我们总认为自己的付出永远是最多最珍贵的，却不知道这种在乎付出的，本身就是一种自私的表现。</p>
-<img src="https://i.loli.net/2020/05/14/igNyeUd5prQPt1l.png" alt="05.png" style="zoom:50%;" />
-
-
-
+<p><img src="https://i.loli.net/2020/05/14/igNyeUd5prQPt1l.png" alt="05.png" style="zoom:50%;" /></p>
 <h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><p>   如果说上述观点属于爱情的初级阶段，你们对此表示不感兴趣，那么我们不妨来谈谈什么是高级阶段的爱情。</p>
 <p>如果说占有欲和排他性代表了恋爱的初级阶段，<strong>那么适度的节制则代表了高级阶段的爱情。</strong></p>
 <p>节制自己的贪婪和自私，把在恋爱中所牺牲的大部分自由还给对方也还给自己，让恋爱双方的心灵在这个过程中得到巨大成长，也让自己在灵魂的契合与身体的吸引中达到完美的平衡。</p>
@@ -577,6 +496,50 @@
       </tags>
   </entry>
   <entry>
+    <title>软件推荐系列（零）</title>
+    <url>/2020/05/16/software0/</url>
+    <content><![CDATA[<h2 id="迅捷PDF免安装版"><a href="#迅捷PDF免安装版" class="headerlink" title="迅捷PDF免安装版"></a>迅捷PDF免安装版</h2><p>​      迅捷PDF转换器是一款功能强大、界面简洁、操作简单的PDF转换成Word或word转换成pdf的软件。软件具备快速转换、批量转换，高质量识别等功能。本款软件为免安装版，大家双击即可运行软件，大家可以创建一个快捷方式添加到桌面，方便下次使用。首先我们先来使用文件夹中的注册机，激活一下软件。</p>
+<a id="more"></a>
+<p><img src="https://i.loli.net/2020/05/16/AQdNqWcV6k9ifsC.png" alt="pdf01.png" style="zoom:50%;" /></p>
+<p>​      点击注册，大家先复制软件中的机器码，然后通过注册机，注册一个注册码。然后将注册码复制粘贴进软件中激活界面即可成功。</p>
+<p><img src="https://i.loli.net/2020/05/16/tRMHNYJWZpzPAer.png" alt="pdf02.png" style="zoom:67%;" /></p>
+<p><img src="https://i.loli.net/2020/05/16/qtIEacVDrsTug7o.png" alt="pdf03.png" style="zoom:67%;" /></p>
+<p><img src="https://i.loli.net/2020/05/16/B78MGiJDEAYgIFS.png" alt="pdf04.png" style="zoom:67%;" /></p>
+<p>​      一切都完成之后，软件内的所有软件就可以正常使用，文件转word、ppt、图片等，除此之外还支持电子书格式转换，功能非常的全面。<br>​     最后附上百度网盘的链接   <a href="https://pan.baidu.com/s/1ZXmDWNm81-2t6pjnpXSWyQ" target="_blank" rel="noopener">https://pan.baidu.com/s/1ZXmDWNm81-2t6pjnpXSWyQ</a><br>​                                     提取码   tpn0</p>
+<p>​                      该系列不定时更新哦，小胡只要遇到好的软件会给大家分享哒！！！</p>
+]]></content>
+      <categories>
+        <category>Share</category>
+      </categories>
+      <tags>
+        <tag>PDF</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>TeX技巧系列（一）</title>
+    <url>/2020/05/14/TeX-skill-1/</url>
+    <content><![CDATA[<h1 id="TeX技巧系列（一）"><a href="#TeX技巧系列（一）" class="headerlink" title="TeX技巧系列（一）"></a>TeX技巧系列（一）</h1><h2 id="TeXLive-2020-WinEdt10-3-SumatraPDF配置"><a href="#TeXLive-2020-WinEdt10-3-SumatraPDF配置" class="headerlink" title="TeXLive 2020 +WinEdt10.3+SumatraPDF配置"></a>TeXLive 2020 +WinEdt10.3+SumatraPDF配置</h2><p>​         首先需要先分别把TeXLive 2020、WinEdt和SumatraPDF分别下载并安装。TeXLive 2020文件比较大，可以参考我的博客<strong>TeX技巧系列（零）</strong>安装。WinEdt10.3和SumatraPDF都是比较轻量级的应用，安装比较方便，我就不再赘述。其中WinEdt是一款收费的应用，只有30天的试用期， 这里我给出链接，大家自己下载哦。</p>
+<p>百度网盘链接<a href="https://pan.baidu.com/s/1RhXdKPgrRapqmQKafEEFfA" target="_blank" rel="noopener">https://pan.baidu.com/s/1RhXdKPgrRapqmQKafEEFfA</a></p>
+<p>​           提取码：ohqo </p>
+<a id="more"></a>
+<ol>
+<li>下载完成之后就是更改WinEdt10.3的配置了。先配置编译引擎为TeXLive 2020。选择Options-&gt;Execution Modes-&gt;Tex System，把TeX Root更改为TeX Live 的安装路径，把TeX Bin中的路径更改为TeX Live子文件夹”\bin\win32”，后面的两个选择Auto-detect就可以了，点击应用后会自动刷新编译器。不会的看下面图示。</li>
+</ol>
+<p><img src="https://i.loli.net/2020/05/14/9PSZzwmqihtLarg.png" alt="tex1-1.png" style="zoom:80%;" /></p>
+<ol>
+<li>然后更新PDF预览器。在Options-&gt;Execution Modes-&gt;PDF Viewer 中把包含SumatraPDF.exe的路径替换原来路径，这样就行了。选择SumatraPDF是因为这个阅读器非常轻量，而且能够支持反向搜索，点击PDF中的文字可以快速定位到相应的代码位置，非常方便。 </li>
+</ol>
+<p><img src="https://i.loli.net/2020/05/14/euCndcVTfgK63DF.png" alt="tex1-2.png" style="zoom:80%;" /></p>
+<p>以上就是我们开始TeX计划的全部准备啦，下面我们就开始编写吧。</p>
+]]></content>
+      <categories>
+        <category>skill</category>
+      </categories>
+      <tags>
+        <tag>TeX</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>软件推荐系列（一）</title>
     <url>/2020/05/17/software1/</url>
     <content><![CDATA[<h2 id="图片查看编辑软件"><a href="#图片查看编辑软件" class="headerlink" title="图片查看编辑软件"></a>图片查看编辑软件</h2><p>​      今天小胡给大家推荐的是一款照片查看和编辑的软件，双击打开电脑上的某张图片进行查看，这是电脑本身默认自带的功能。但是系统自带的图片查看器不是很好用。<br>大家安装的各自图片查看器都各有优缺点。我推荐的这款软件只有7.5M，软件的优点在于：</p>
@@ -585,24 +548,17 @@
 <p>3、无广告：很多比如2345之类，安装后强行修改注册表、出现弹窗广告，这个软件都没有，干净清爽。</p>
 <p>下载链接在这里：<a href="https://amy.lanzous.com/icg6voj" target="_blank" rel="noopener">https://amy.lanzous.com/icg6voj</a></p>
 <a id="more"></a>
-
-<img src="https://i.loli.net/2020/05/16/Vu53dhCGWet6xsn.png" alt="zp01.png" style="zoom:50%;" />
-
+<p><img src="https://i.loli.net/2020/05/16/Vu53dhCGWet6xsn.png" alt="zp01.png" style="zoom:50%;" /></p>
 <p>​       双击一张图片，是如下所示界面：我建议把我箭头所指的两个勾去掉。这样双击打开的时候更加简洁。只有图片没有讨厌的控制栏。当然，如果你需要他们临时显示出来，以便设置的时候，只要把鼠标放置在上方 或下方 他们就会自动显示出来了。</p>
-<img src="https://i.loli.net/2020/05/16/qxHrgMOGwc4uzTn.png" alt="zp02.png" style="zoom:50%;" />
-
+<p><img src="https://i.loli.net/2020/05/16/qxHrgMOGwc4uzTn.png" alt="zp02.png" style="zoom:50%;" /></p>
 <p>​      我推荐点击一下这里的全屏按钮。以后每次双击图片，直接全屏显示，没有任何多余的东西，干净、清净、专心！</p>
-<img src="https://i.loli.net/2020/05/16/vR3JMHqw2BdoGI6.png" alt="zp03.png" style="zoom:50%;" />
-
+<p><img src="https://i.loli.net/2020/05/16/vR3JMHqw2BdoGI6.png" alt="zp03.png" style="zoom:50%;" /></p>
 <p>​     就像下图一样，双击一张图片，直接就是全屏展示。可以使用键盘上的 + 和 - 来放大和缩小图片。鼠标单击图片上任何地方，可以平移视野。</p>
-<img src="https://i.loli.net/2020/05/16/DbxEgwCYzKojZFU.png" alt="zp04.png" style="zoom:50%;" />
-
+<p><img src="https://i.loli.net/2020/05/16/DbxEgwCYzKojZFU.png" alt="zp04.png" style="zoom:50%;" /></p>
 <p>​      在打开的图片上任何地方右键，可以对软件做一些基本设置让他更好使用。</p>
-<img src="https://i.loli.net/2020/05/16/74Y1uoAnzqrJTge.png" alt="zp05.png" style="zoom:50%;" />
-
+<p><img src="https://i.loli.net/2020/05/16/74Y1uoAnzqrJTge.png" alt="zp05.png" style="zoom:50%;" /></p>
 <p>比如，我希望用鼠标滚轮来控制缩放。就下图这样设置。这个设置我非常建议。</p>
-<img src="https://i.loli.net/2020/05/16/UAIirZkNtXfJ4TR.png" alt="zp06.png" style="zoom:50%;" />
-
+<p><img src="https://i.loli.net/2020/05/16/UAIirZkNtXfJ4TR.png" alt="zp06.png" style="zoom:50%;" /></p>
 <p>其他最常用快捷键：</p>
 <p>1、Esc键 就是退出软件。</p>
 <p>2、空格键 或 键盘上 ↓ ↑ 就是翻看下一张图片。</p>
@@ -620,62 +576,61 @@
     <title>软件推荐系列（二）</title>
     <url>/2020/05/18/software2/</url>
     <content><![CDATA[<h1 id="社交礼仪"><a href="#社交礼仪" class="headerlink" title="社交礼仪"></a>社交礼仪</h1><p>​     今天小胡不想给你们分享软件了，我就根据我自身的经历与感受给大家几条网络社交建议吧，希望可以对你们有所帮助</p>
-<img src="https://i.loli.net/2020/05/17/jSCD5HBRFhbI1rO.png" alt="ly01.png" style="zoom: 67%;" />
-
+<p><img src="https://i.loli.net/2020/05/17/jSCD5HBRFhbI1rO.png" alt="ly01.png" style="zoom: 67%;" /></p>
 <a id="more"></a>
-
 <ol>
 <li><font color=red size=4>不要随便给人发语音消息</font>，特别是不熟悉的人，动辄还是几十秒，谁爱听呀。</li>
 </ol>
-<ol start="2">
+<ol>
 <li><font color=red size=4>发拼多多链接前，先问下对方有没有软件</font>。当对方回复说没有软件，就是拒绝了你，不要不识趣地说：“那下载一个嘛，很快的”。</li>
 </ol>
-<ol start="3">
+<ol>
 <li><font color=red size=4>不要总是发在吗在吗，而又不说问题</font>。一个成熟的成年人，不会发这种毫无价值的信息。在或不在，又有什么影响呢。</li>
 </ol>
 <p>小胡知道，大多数人发在吗这种消息都是有求于人，但又害怕说出了请求后被对方拒绝，直接不回消息，所以发个在吗先试探。</p>
 <p>只能说这种想法完全是自欺欺人，能不能帮完全取决于我们的交情和事情的难易程度。一句在吗根本不能提高成功率，反而容易让对方猜测。</p>
-<ol start="4">
+<ol>
 <li><font color=red size=4>切忌消息轰炸</font>。小胡遇到过好几次，对方给我发了消息没能及时回复，连续给我发了十几条消息。本来要回复的瞬间不想回复了。</li>
 </ol>
 <p>发了消息没有回复，可以隔几个小时再发，如果连续发三次都没有回复，对方要么真有事在忙要么就是不想回你。</p>
-<ol start="5">
+<ol>
 <li><p>跟朋友借钱记得主动还， <font color=red size=4>还不上也要记得提前告知</font>。相信小胡，跟对方说明比到期不还要好太多，深有感触。</p>
 </li>
 <li><p><font color=red size=4>不是紧要的事，不要找异性借钱</font>。碍于情面，对方不会主动找你还钱。当对方找你还钱时，你们的关系也就掰了，下次也不好借了。</p>
 </li>
 </ol>
-<ol start="7">
+<ol>
 <li>别人给你看手机时，<font color=red size=4>不要乱滑动</font>，最好就保持在原来的界面。谁知道会不会看到不该看的东西，让彼此尴尬呢。</li>
 </ol>
-<ol start="8">
+<ol>
 <li>发长文字，记得分段。</li>
 </ol>
-<ol start="9">
+<ol>
 <li><font color=red size=4>回复嗯嗯、好哒、OK的、没问题比回复嗯、好、哦要好。</font>(这点很重要，男同胞们要记住哦。)</li>
 </ol>
-<ol start="10">
+<ol>
 <li>让关系一般的人带东西，记得先给钱。</li>
 </ol>
-<ol start="11">
+<ol>
 <li>能百度解决的简单问题，最好不要在群里问人。</li>
 </ol>
-<ol start="12">
+<ol>
 <li>工作上的事，在收到短信、微信或邮件后，记得回复收到。</li>
 </ol>
-<ol start="13">
+<ol>
 <li>主动加别人好友，就不要反问别人是谁了。的确有的朋友添加好友，对方隔几天才通过，不记得为什么加对方。</li>
 </ol>
 <p>但也不要像大爷一样直接问你是哪位或者干脆发个问号。整得是别人主动加你一样，不拉黑就有鬼了。</p>
 <p>实在想知道对方是谁，可以委婉地表达：请问你是做什么的呢，最近加人有点多，搞忘为什么加你了。</p>
-<ol start="14">
+<ol>
 <li><font color=red size=4>不认识的人，删好友请主动告知</font>。</li>
 </ol>
-<ol start="15">
+<ol>
 <li>看到好文章，一定要转发加收藏</li>
 </ol>
-<pre><code><pre><code class="highlight plain">​     以上建议，仅供参考。素质是一场修行，绝不是一篇文章，几条建议能够解决的。
-​    </code></pre></code></pre><p>​       最后该系列不定时更新哦，小胡今天有点水！！！</p>
+<pre><code>​     以上建议，仅供参考。素质是一场修行，绝不是一篇文章，几条建议能够解决的。
+​    
+</code></pre><p>​       最后该系列不定时更新哦，小胡今天有点水！！！</p>
 ]]></content>
       <categories>
         <category>Share</category>
@@ -691,22 +646,16 @@
 <p>   目前比较好的方法就是冰点文库（链接：<a href="https://pan.baidu.com/s/1-OMdOTAz7RJCeaV0VDh6RQ" target="_blank" rel="noopener">https://pan.baidu.com/s/1-OMdOTAz7RJCeaV0VDh6RQ</a><br>提取码：12ya ）了，这款软件很强大，主流的文库都可以下载，不过美中不足的地方就是下载之后的文件生成的是PDF文档，还要转换格式，不是很方便。</p>
 <p>   今天小胡就给大家分享一个小技巧，通过三个字母“<strong>VVV</strong>”就可以轻松免费下载百度文库任意文档，包括收费的文档，下载完直接用，无需再转换，怎么样？是不是特别赞！下面就跟着小胡来学习吧！</p>
 <a id="more"></a>
-
 <p>​    首先在百度文库找到你想要下载的文档，如下图，我找了一个创业计划书的Word文档，需要5个下载券才能下载。</p>
-<img src="https://i.loli.net/2020/05/18/Rl2mZNcdy5A4wku.png" alt="wk01.png" style="zoom:67%;" />
-
+<p><img src="https://i.loli.net/2020/05/18/Rl2mZNcdy5A4wku.png" alt="wk01.png" style="zoom:67%;" /></p>
 <p>​      在文档页面的网址<strong>“baidu”</strong>后面加上 <strong>“vvv”</strong> 三个字母，然后回车就可以跳转到这个VVV文档在线导出工具网站的下载页面。</p>
-<img src="https://i.loli.net/2020/05/18/XPqCZHdiGzUlrjR.png" alt="wk02.png" style="zoom:67%;" />
-
-<img src="https://i.loli.net/2020/05/18/fIwESXLNrmgq9kc.png" alt="wk03.png" style="zoom:67%;" />
-
+<p><img src="https://i.loli.net/2020/05/18/XPqCZHdiGzUlrjR.png" alt="wk02.png" style="zoom:67%;" /></p>
+<p><img src="https://i.loli.net/2020/05/18/fIwESXLNrmgq9kc.png" alt="wk03.png" style="zoom:67%;" /></p>
 <p>这里注意给大家验证码：<strong>7396</strong></p>
 <p>  选择你需要导出文档的格式，可以word或者PDF，选择之后点击下载即可。</p>
-<img src="https://i.loli.net/2020/05/18/U4Kwb9dT17yGspl.png" alt="wk04.png" style="zoom:67%;" />
-
+<p><img src="https://i.loli.net/2020/05/18/U4Kwb9dT17yGspl.png" alt="wk04.png" style="zoom:67%;" /></p>
 <p>  小胡以word为例给大家演示一下，直接点击下载，它会自动调用你浏览器下载工具进行下载。付费文档也可以下载哦，快去使用吧！</p>
-<img src="https://i.loli.net/2020/05/18/n7dFWRxh1vCSAkQ.png" alt="wk06.png" style="zoom:67%;" />
-
+<p><img src="https://i.loli.net/2020/05/18/n7dFWRxh1vCSAkQ.png" alt="wk06.png" style="zoom:67%;" /></p>
 <p>​      </p>
 <p>​    该系列不定时更新哦，小胡只要遇到好的软件都会给大家分享哒！！！</p>
 ]]></content>
@@ -715,28 +664,6 @@
       </categories>
       <tags>
         <tag>download</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>上海外滩随记</title>
-    <url>/2020/05/28/SH-BUND/</url>
-    <content><![CDATA[<h2 id="Shanghai-Bund"><a href="#Shanghai-Bund" class="headerlink" title="Shanghai Bund"></a>Shanghai Bund</h2><p>  2020.5.27   这一路都是风景，我就不为你翻山越岭了。</p>
-<p><img src="https://i.loli.net/2020/05/29/RYoksUX8TFKywdc.jpg" alt="wt01.JPG"></p>
-<a id="more"></a>
-<h5 id="路上"><a href="#路上" class="headerlink" title="路上"></a>路上</h5><p><img src="https://i.loli.net/2020/05/29/S7TF415NRqGsMba.jpg" alt="wt02.JPG"></p>
-<h5 id="外白渡桥"><a href="#外白渡桥" class="headerlink" title="外白渡桥"></a>外白渡桥</h5><p><img src="https://i.loli.net/2020/05/29/wVSj74YhotQZIuT.jpg" alt="wt03.JPG"></p>
-<h5 id="外滩"><a href="#外滩" class="headerlink" title="外滩"></a>外滩</h5><p><img src="https://i.loli.net/2020/05/29/ZByoLbfY2IDVWvq.jpg" alt="wt04.JPG"></p>
-<p><img src="https://i.loli.net/2020/05/29/BamdxKynchEYAwk.jpg" alt="wt05.JPG"></p>
-<h5 id="南京东路"><a href="#南京东路" class="headerlink" title="南京东路"></a>南京东路</h5><p><img src="https://i.loli.net/2020/05/29/RMnzoNePWaqYriD.jpg" alt="wt06.JPG"></p>
-<p><img src="https://i.loli.net/2020/05/29/I7tQwjcE1gpB6Y2.jpg" alt="wt07.JPG"></p>
-<h5 id="终"><a href="#终" class="headerlink" title="终"></a>终</h5><p><img src="https://i.loli.net/2020/05/29/ctOdjR5XEf9KS4G.jpg" alt="wt08.JPG"></p>
-<p><img src="https://i.loli.net/2020/05/29/9jgUiJ1nYQaq2Lw.jpg" alt="wt09.JPG"></p>
-]]></content>
-      <categories>
-        <category>personal</category>
-      </categories>
-      <tags>
-        <tag>Travel</tag>
       </tags>
   </entry>
 </search>
