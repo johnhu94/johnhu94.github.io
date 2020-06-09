@@ -266,6 +266,8 @@
 <li><strong>丰富的快捷键</strong></li>
 </ul>
 <a id="more"></a>
+
+
 <h2 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h2><ul>
 <li>加粗 <code>Ctrl + B</code></li>
 <li>斜体 <code>Ctrl + I</code></li>
@@ -285,7 +287,6 @@
 </blockquote>
 <p><a href="https://zh.wikipedia.org/wiki/Markdown" target="_blank" rel="noopener">使用简单的符号标识不同的标题，将某些文字标记为<strong>粗体</strong>或者<em>斜体</em>，创建一个</a><a href="http://www.csdn.net/" target="_blank" rel="noopener">链接</a>等，详细语法参考帮助？。</p>
 <h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><p><strong>Markdown　Extra</strong>　表格语法：</p>
-<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -293,8 +294,7 @@
 <th>价格</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>Computer</td>
 <td>$1600</td>
 </tr>
@@ -306,11 +306,8 @@
 <td>Pipe</td>
 <td>$1</td>
 </tr>
-</tbody>
-</table>
-</div>
+</tbody></table>
 <p>可以使用冒号来定义对齐方式：</p>
-<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -319,8 +316,7 @@
 <th>数量</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>Computer</td>
 <td>1600 元</td>
 <td>5</td>
@@ -335,9 +331,7 @@
 <td>1 元</td>
 <td>234</td>
 </tr>
-</tbody>
-</table>
-</div>
+</tbody></table>
 <h3 id="定义列表"><a href="#定义列表" class="headerlink" title="定义列表"></a>定义列表</h3><p><strong>Markdown　Extra</strong>　定义列表语法： </p>
 <p>项目1</p>
 <p>: 定义 A</p>
@@ -347,11 +341,13 @@
 <p>: 定义 C</p>
 <p>: 定义 D</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt; 定义D内容</span><br></pre></td></tr></table></figure>
+
 <h3 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h3><p>代码块语法遵循标准markdown代码，例如：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">@requires_authorization</span><br><span class="line">def somefunc(param1&#x3D;&#39;&#39;, param2&#x3D;0):</span><br><span class="line">    &#39;&#39;&#39;A docstring&#39;&#39;&#39;</span><br><span class="line">    if param1 &gt; param2: # interesting</span><br><span class="line">        print &#39;Greater&#39;</span><br><span class="line">    return (param2 - param1 + 1) or None</span><br><span class="line">class SomeClass:</span><br><span class="line">    pass</span><br><span class="line">&gt;&gt;&gt; message &#x3D; &#39;&#39;&#39;interpreter</span><br><span class="line">... prompt&#39;&#39;&#39;</span><br></pre></td></tr></table></figure>
+
 <h2 id="自定义字体颜色-github中看不到颜色"><a href="#自定义字体颜色-github中看不到颜色" class="headerlink" title="自定义字体颜色(github中看不到颜色):"></a>自定义字体颜色(github中看不到颜色):</h2><p>Hello</p>
 <h2 id="删除线"><a href="#删除线" class="headerlink" title="删除线"></a>删除线</h2><p><del>Hello</del></p>
-<p>###脚注 生成一个脚注<sup><a href="#fn_footnote" id="reffn_footnote">footnote</a></sup>. <sup><a href="#fn_footnote" id="reffn_footnote">footnote</a></sup>: 这里是 <strong>脚注</strong> 的 <em>内容</em>.</p>
+<p>###脚注 生成一个脚注[^footnote]. [^footnote]: 这里是 <strong>脚注</strong> 的 <em>内容</em>.</p>
 <h3 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h3><p>用 <code>[TOC]</code>来生成目录：</p>
 <p>[TOC]</p>
 <h3 id="数学公式"><a href="#数学公式" class="headerlink" title="数学公式"></a>数学公式</h3><p>使用MathJax渲染<em>LaTex</em> 数学公式，详见<a href="http://math.stackexchange.com/" target="_blank" rel="noopener">math.stackexchange.com</a>.</p>
@@ -367,8 +363,10 @@
 <p><a href="https://zhuanlan.zhihu.com/p/24502400" target="_blank" rel="noopener" title="本文同时发布于微信公众号：两个少年的奇幻漂流（ID：Amazing_Adventure）本期的主要内容是数学公式的排版，包含以下内容：行内公式与行间公式数学结构的输入数学符号的输入多行公式排版数学公式的排版是 LaTeX 的…">LaTeX 第五课：数学公式排版 </a></p>
 <h3 id="UML-图"><a href="#UML-图" class="headerlink" title="UML 图:"></a>UML 图:</h3><p>可以渲染序列图：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">张三-&gt;李四: 嘿，小四儿, 写博客了没</span><br><span class="line">Note right of 李四: 李四愣了一下，说：</span><br><span class="line">李四--&gt;张三: 忙得吐血，哪有时间写。</span><br></pre></td></tr></table></figure>
+
 <p>或者流程图：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">st&#x3D;&gt;start: 开始</span><br><span class="line">e&#x3D;&gt;end: 结束</span><br><span class="line">op&#x3D;&gt;operation: 我的操作</span><br><span class="line">cond&#x3D;&gt;condition: 确认？</span><br><span class="line"></span><br><span class="line">st-&gt;op-&gt;cond</span><br><span class="line">cond(yes)-&gt;e</span><br><span class="line">cond(no)-&gt;op</span><br></pre></td></tr></table></figure>
+
 <ul>
 <li>关于 <strong>序列图</strong> 语法，参考 <a href="https://zhuanlan.zhihu.com/p/70261692" target="_blank" rel="noopener" title="这篇文章将为大家介绍如何以写代码的方式画时序图（也叫顺序图），同时也会介绍一些时序图基础知识。相比于使用画图工具拖拽画图，用代码画图有什么好处？首先，这种方式非常轻便，无需安装复杂的画图应用。Typora…">Markdown 进阶技能：用代码画时序图 </a>.</li>
 <li>关于 <strong>流程图</strong> 语法，参考<a href="https://zhuanlan.zhihu.com/p/28468233" target="_blank" rel="noopener" title="前言MarkDown的简便性让人越来越喜欢。虽然MarkDown也不是万能的，有些排版等MarkDown做起来也不是那么完美，尤其是涉及图片操作。在日常的文档生产中，难免要用到一些流程图，一般用亿图图示等流程图软件画好了导…">MarkDown不能画流程图？其实很简单 </a>.</li>
