@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha256-CTSx/A06dm1B063156EVh15m6Y67pAjZZaQc89LLSrU=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"yoursite.com","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.18.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="1．统计学习是关于计算机基于数据构建概率统计模型并运用模型对数据进行分析与预测的一门学科。统计学习包括监督学习、非监督学习、半监督学习和强化学习。 2．统计学习方法三要素——模型、策略、算法，对理解统计学习方法起到提纲挈领的作用。 3．本书主要讨论监督学习，监督学习可以概括如下：从给定有限的训练数据出发， 假设数据是独立同分布的，而且假设模型属于某个假设空间，应用某一评价准则，从假设空间中选取一个">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Lesson1 统计学习方法概论">
+<meta property="og:url" content="http://yoursite.com/2023/10/18/statistical-learning-methods/index.html">
+<meta property="og:site_name" content="小胡说事">
+<meta property="og:description" content="1．统计学习是关于计算机基于数据构建概率统计模型并运用模型对数据进行分析与预测的一门学科。统计学习包括监督学习、非监督学习、半监督学习和强化学习。 2．统计学习方法三要素——模型、策略、算法，对理解统计学习方法起到提纲挈领的作用。 3．本书主要讨论监督学习，监督学习可以概括如下：从给定有限的训练数据出发， 假设数据是独立同分布的，而且假设模型属于某个假设空间，应用某一评价准则，从假设空间中选取一个">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://yoursite.com/image.png">
+<meta property="og:image" content="http://yoursite.com/image-1.png">
+<meta property="og:image" content="http://yoursite.com/image-2.png">
+<meta property="og:image" content="http://yoursite.com/image-3.png">
+<meta property="og:image" content="http://yoursite.com/image-4.png">
+<meta property="og:image" content="http://yoursite.com/image-5.png">
+<meta property="article:published_time" content="2023-10-18T00:00:00.000Z">
+<meta property="article:modified_time" content="2023-10-18T06:35:53.867Z">
+<meta property="article:author" content="John Hu">
+<meta property="article:tag" content="statistical">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/image.png">
+
+
+<link rel="canonical" href="http://yoursite.com/2023/10/18/statistical-learning-methods/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://yoursite.com/2023/10/18/statistical-learning-methods/","path":"2023/10/18/statistical-learning-methods/","title":"Lesson1 统计学习方法概论"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Lesson1 统计学习方法概论 | 小胡说事</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">小胡说事</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">12</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">5</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">17</span></a></li><li class="menu-item menu-item-notes"><a href="/notes/" rel="section"><i class="fa fa-bars fa-fw"></i>notes</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8%E6%9C%80%E5%B0%8F%E4%BA%8C%E4%B9%98%E6%B3%95%E6%8B%9F%E5%92%8C%E6%9B%B2%E7%BA%BF"><span class="nav-number">1.</span> <span class="nav-text">使用最小二乘法拟和曲线</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#M-0"><span class="nav-number">2.</span> <span class="nav-text">M&#x3D;0</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#M-1"><span class="nav-number">3.</span> <span class="nav-text">M&#x3D;1</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#M-3"><span class="nav-number">4.</span> <span class="nav-text">M&#x3D;3</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#M-9"><span class="nav-number">5.</span> <span class="nav-text">M&#x3D;9</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AD%A3%E5%88%99%E5%8C%96"><span class="nav-number">6.</span> <span class="nav-text">正则化</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="John Hu"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">John Hu</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">17</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/johnhu94" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;johnhu94" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:jintaohu94@gmail.com" title="E-Mail → mailto:jintaohu94@gmail.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2023/10/18/statistical-learning-methods/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="John Hu">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小胡说事">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Lesson1 统计学习方法概论 | 小胡说事">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Lesson1 统计学习方法概论
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2023-10-18 08:00:00 / 修改时间：14:35:53" itemprop="dateCreated datePublished" datetime="2023-10-18T08:00:00+08:00">2023-10-18</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Note/" itemprop="url" rel="index"><span itemprop="name">Note</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>1．统计学习是关于计算机基于数据构建概率统计模型并运用模型对数据进行分析与预测的一门学科。统计学习包括监督学习、非监督学习、半监督学习和强化学习。</p>
+<p>2．统计学习方法三要素——模型、策略、算法，对理解统计学习方法起到提纲挈领的作用。</p>
+<p>3．本书主要讨论监督学习，监督学习可以概括如下：从给定有限的训练数据出发， 假设数据是独立同分布的，而且假设模型属于某个假设空间，应用某一评价准则，从假设空间中选取一个最优的模型，使它对已给训练数据及未知测试数据在给定评价标准意义下有最准确的预测。</p>
+<p>4．统计学习中，进行模型选择或者说提高学习的泛化能力是一个重要问题。如果只考虑减少训练误差，就可能产生过拟合现象。模型选择的方法有正则化与交叉验证。学习方法泛化能力的分析是统计学习理论研究的重要课题。</p>
+<p>5．分类问题、标注问题和回归问题都是监督学习的重要问题。本书中介绍的统计学习方法包括感知机、$k$近邻法、朴素贝叶斯法、决策树、逻辑斯谛回归与最大熵模型、支持向量机、提升方法、EM算法、隐马尔可夫模型和条件随机场。这些方法是主要的分类、标注以及回归方法。它们又可以归类为生成方法与判别方法。</p>
+<h3 id="使用最小二乘法拟和曲线"><a href="#使用最小二乘法拟和曲线" class="headerlink" title="使用最小二乘法拟和曲线"></a>使用最小二乘法拟和曲线</h3><p>高斯于1823年在误差$e_1,…,e_n$独立同分布的假定下,证明了最小二乘方法的一个最优性质: 在所有无偏的线性估计类中,最小二乘方法是其中方差最小的！<br>对于数据$(x_i, y_i)   (i&#x3D;1, 2, 3…,m)$</p>
+<p>拟合出函数$h(x)$</p>
+<p>有误差，即残差：$r_i&#x3D;h(x_i)-y_i$</p>
+<p>此时$L2$范数(残差平方和)最小时，$h(x)$ 和 $y$ 相似度最高，更拟合.</p>
+<p>一般的$H(x)$为$n$次的多项式，$H(x)&#x3D;w_0+w_1x+w_2x^2+…w_nx^n$</p>
+<p>$w(w_0,w_1,w_2,…,w_n)$为参数</p>
+<p>最小二乘法就是要找到一组 $w(w_0,w_1,w_2,…,w_n)$ ，使得$\sum_{i&#x3D;1}^n(h(x_i)-y_i)^2$ (残差平方和) 最小</p>
+<p>即，求 $min\sum_{i&#x3D;1}^n(h(x_i)-y_i)^2$</p>
+<hr>
+<p>举例：我们用目标函数$y&#x3D;sin2{\pi}x$, 加上一个正态分布的噪音干扰，用多项式去拟合</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">import numpy as np</span><br><span class="line">import scipy as sp</span><br><span class="line">from scipy.optimize import leastsq  # 最小二乘</span><br><span class="line">import matplotlib.pyplot as plt     # 绘图</span><br><span class="line"># matplotlib inline</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>ps: numpy.poly1d([1,2,3])  生成  $1x^2+2x^1+3x^0$*</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"># 目标函数</span><br><span class="line">def real_func(x):</span><br><span class="line">    return np.sin(2*np.pi*x)</span><br><span class="line"></span><br><span class="line"># 多项式</span><br><span class="line">def fit_func(p, x):</span><br><span class="line">    f = np.poly1d(p)</span><br><span class="line">    return f(x)</span><br><span class="line"></span><br><span class="line"># 残差</span><br><span class="line">def residuals_func(p, x, y):</span><br><span class="line">    ret = fit_func(p, x) - y</span><br><span class="line">    return ret</span><br><span class="line"></span><br><span class="line">x = np.linspace(0, 1, 10)</span><br><span class="line">y_ = np.sin(2*np.pi*x)</span><br><span class="line">y1 = [np.random.normal(0, 0.1) + y1 for y1 in y_]</span><br><span class="line">y2 = [ y1 for y1 in y_]</span><br><span class="line">print(y1)</span><br><span class="line">print(y2)</span><br><span class="line">plt.plot(x,y1)</span><br><span class="line">plt.plot(x,y2)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+
+<p><img data-src="/image.png" alt="Alt text"></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"># 十个点</span><br><span class="line">x = np.linspace(0, 1, 10)</span><br><span class="line">x_points = np.linspace(0, 1, 1000)</span><br><span class="line"># 加上正态分布噪音的目标函数的值</span><br><span class="line">y_ = real_func(x)</span><br><span class="line">y = [np.random.normal(0, 0.1) + y1 for y1 in y_]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def fitting(M=0):</span><br><span class="line">    &quot;&quot;&quot;</span><br><span class="line">    M    为 多项式的次数</span><br><span class="line">    &quot;&quot;&quot;</span><br><span class="line">    # 随机初始化多项式参数</span><br><span class="line">    p_init = np.random.rand(M + 1)</span><br><span class="line">    # 最小二乘法</span><br><span class="line">    p_lsq = leastsq(residuals_func, p_init, args=(x, y))</span><br><span class="line">    print(&#x27;Fitting Parameters:&#x27;, p_lsq[0])</span><br><span class="line"></span><br><span class="line">    # 可视化</span><br><span class="line">    plt.plot(x_points, real_func(x_points), label=&#x27;real&#x27;)</span><br><span class="line">    plt.plot(x_points, fit_func(p_lsq[0], x_points), label=&#x27;fitted curve&#x27;)</span><br><span class="line">    plt.plot(x, y, &#x27;bo&#x27;, label=&#x27;noise&#x27;)</span><br><span class="line">    plt.legend()</span><br><span class="line">    return p_lsq</span><br></pre></td></tr></table></figure>
+
+<h3 id="M-0"><a href="#M-0" class="headerlink" title="M&#x3D;0"></a>M&#x3D;0</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># M=0</span><br><span class="line">p_lsq_0 = fitting(M=0)</span><br></pre></td></tr></table></figure>
+<p><img data-src="/image-1.png" alt="Alt text"></p>
+<h3 id="M-1"><a href="#M-1" class="headerlink" title="M&#x3D;1"></a>M&#x3D;1</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># M=1</span><br><span class="line">p_lsq_1 = fitting(M=1)</span><br></pre></td></tr></table></figure>
+<p><img data-src="/image-2.png" alt="Alt text"></p>
+<h3 id="M-3"><a href="#M-3" class="headerlink" title="M&#x3D;3"></a>M&#x3D;3</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># M=3</span><br><span class="line">p_lsq_3 = fitting(M=3)</span><br></pre></td></tr></table></figure>
+<p><img data-src="/image-3.png" alt="Alt text"></p>
+<h3 id="M-9"><a href="#M-9" class="headerlink" title="M&#x3D;9"></a>M&#x3D;9</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># M=9</span><br><span class="line">p_lsq_9 = fitting(M=9)</span><br></pre></td></tr></table></figure>
+<p><img data-src="/image-4.png" alt="Alt text"></p>
+<p>当M&#x3D;9时，多项式曲线通过了每个数据点，但是造成了过拟合</p>
+<h3 id="正则化"><a href="#正则化" class="headerlink" title="正则化"></a>正则化</h3><p>结果显示过拟合， 引入正则化项(regularizer)，降低过拟合</p>
+<p>$Q(x)&#x3D;\sum_{i&#x3D;1}^n(h(x_i)-y_i)^2+\lambda||w||^2$。</p>
+<p>回归问题中，损失函数是平方损失，正则化可以是参数向量的L2范数,也可以是L1范数。</p>
+<ul>
+<li><p>L1: regularization*abs(p)</p>
+</li>
+<li><p>L2: 0.5 * regularization * np.square(p)</p>
+</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">regularization = 0.0001</span><br><span class="line">def residuals_func_regularization(p, x, y):</span><br><span class="line">    ret = fit_func(p, x) - y</span><br><span class="line">    ret = np.append(ret,</span><br><span class="line">                    np.sqrt(0.5 * regularization * np.square(p)))  # L2范数作为正则化项</span><br><span class="line">    return ret</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">regularization = 0.0001</span><br><span class="line">def residuals_func_regularization(p, x, y):</span><br><span class="line">    ret = fit_func(p, x) - y</span><br><span class="line">    ret = np.append(ret,</span><br><span class="line">                    regularization*np.abs(p)) # L2范数作为正则化项</span><br><span class="line">    return ret</span><br></pre></td></tr></table></figure>
+
+<pre><code># 最小二乘法,加正则化项
+p_init = np.random.rand(9 + 1)
+p_lsq_regularization = leastsq(
+    residuals_func_regularization, p_init, args=(x, y))
+
+plt.plot(x_points, real_func(x_points), label=&#39;real&#39;)
+plt.plot(x_points, fit_func(p_lsq_9[0], x_points), label=&#39;fitted curve&#39;)
+plt.plot(x_points,fit_func(p_lsq_regularization[0], x_points),
+    label=&#39;regularization&#39;)
+plt.plot(x, y, &#39;bo&#39;, label=&#39;noise&#39;)
+plt.legend()
+</code></pre>
+<p><img data-src="/image-5.png" alt="Alt text"></p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/statistical/" rel="tag"># statistical</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2023/10/12/hello-world2/" rel="prev" title="John Hu">
+                  <i class="fa fa-angle-left"></i> John Hu
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments gitalk-container"></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 2015 – 
+    <span itemprop="copyrightYear">2023</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">John Hu</span>
+  </div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+    </div>
+  </footer>
+
+  
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.16.0/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+
+  
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.8.0/gitalk.css" integrity="sha256-AJnUHL7dBv6PGaeyPQJcgQPDjt/Hn/PvYZde1iqfp8U=" crossorigin="anonymous">
+
+<script class="next-config" data-name="gitalk" type="application/json">{"enable":true,"github_id":"johnhu94","repo":"johnhu94.github.io","client_id":"e51e6e27bb7246b1452b","client_secret":"86cc4935c63fb7a2d9f9b1711822e09378143a1f","admin_user":"johnhu94","distraction_free_mode":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token","language":null,"js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.8.0/gitalk.min.js","integrity":"sha256-MVK9MGD/XJaGyIghSVrONSnoXoGh3IFxLw0zfvzpxR4="},"path_md5":"e74724de412349ad233580b522293b39"}</script>
+<script src="/js/third-party/comments/gitalk.js"></script>
+
+</body>
+</html>
