@@ -86,7 +86,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">13</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">5</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">17</span></a></li><li class="menu-item menu-item-notes"><a href="/notes/" rel="section"><i class="fa fa-bars fa-fw"></i>notes</a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">12</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">5</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">17</span></a></li><li class="menu-item menu-item-notes"><a href="/notes/" rel="section"><i class="fa fa-bars fa-fw"></i>notes</a></li>
   </ul>
 </nav>
 
@@ -136,7 +136,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">13</span>
+        <span class="site-state-item-count">12</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -200,7 +200,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2023-10-18 09:00:00 / 修改时间：15:17:36" itemprop="dateCreated datePublished" datetime="2023-10-18T09:00:00+08:00">2023-10-18</time>
+      <time title="创建时间：2023-10-18 09:00:00 / 修改时间：21:53:31" itemprop="dateCreated datePublished" datetime="2023-10-18T09:00:00+08:00">2023-10-18</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -222,9 +222,17 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"></span><br><span class="line"><span class="comment">#图形输入值</span></span><br><span class="line">input_values = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>]</span><br><span class="line"><span class="comment">#图形输出值</span></span><br><span class="line">squares = [<span class="number">1</span>,<span class="number">4</span>,<span class="number">9</span>,<span class="number">16</span>,<span class="number">25</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment">#plot根据列表绘制出有意义的图形，linewidth是图形线宽，可省略</span></span><br><span class="line">plt.plot(input_values,squares,linewidth=<span class="number">2</span>)</span><br><span class="line"><span class="comment">#设置图标标题</span></span><br><span class="line">plt.title(<span class="string">&quot;Square Numbers&quot;</span>,fontsize = <span class="number">24</span>)</span><br><span class="line"><span class="comment">#设置坐标轴标签</span></span><br><span class="line">plt.xlabel(<span class="string">&quot;Value&quot;</span>,fontsize = <span class="number">14</span>)</span><br><span class="line">plt.ylabel(<span class="string">&quot;Square of Value&quot;</span>,fontsize = <span class="number">14</span>)</span><br><span class="line"><span class="comment">#设置刻度标记的大小</span></span><br><span class="line">plt.tick_params(axis=<span class="string">&#x27;x&#x27;</span>,width=<span class="number">6</span>,labelsize = <span class="number">14</span>) </span><br><span class="line"><span class="comment"># plt.tick_params(which=&#x27;both&#x27;,width=2,colors=&#x27;gold&#x27;) </span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 参数axis的值为’x’、’y’、’both’，分别代表设置X轴、Y轴以及同时设置，默认值为’both’。 </span></span><br><span class="line"><span class="comment"># ax1.tick_params(axis=’x’,width=2,colors=’gold’) </span></span><br><span class="line"><span class="comment"># ax2.tick_params(axis=’y’,width=2,colors=’gold’) </span></span><br><span class="line"><span class="comment"># ax3.tick_params(axis=’both’,width=2,colors=’gold’) </span></span><br><span class="line"><span class="comment"># 参数which的值为 ‘major’、’minor’、’both’，分别代表设置主刻度线、副刻度线以及同时设置，默认值为’major’ （主刻度线、副刻度线类似于厘米尺。CM与MM的区别） </span></span><br><span class="line"><span class="comment"># ax1.tick_params(which=’major’,width=2,colors=’gold’) </span></span><br><span class="line"><span class="comment"># ax2.tick_params(which=’minor’,width=2,colors=’gold’) </span></span><br><span class="line"><span class="comment"># ax3.tick_params(which=’both’,width=2,colors=’gold’) </span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#打开matplotlib查看器，并显示绘制图形</span></span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+          <span id="more"></span> 
 
-<p><img data-src="https://s2.loli.net/2023/10/18/yaTqjXKRLw7Pn8e.png" alt="image.png"></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"></span><br><span class="line"><span class="comment">#图形输入值</span></span><br><span class="line">input_values = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>]</span><br><span class="line"><span class="comment">#图形输出值</span></span><br><span class="line">squares = [<span class="number">1</span>,<span class="number">4</span>,<span class="number">9</span>,<span class="number">16</span>,<span class="number">25</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment">#plot根据列表绘制出有意义的图形，linewidth是图形线宽，可省略</span></span><br><span class="line">plt.plot(input_values,squares,linewidth=<span class="number">2</span>)</span><br><span class="line"><span class="comment">#设置图标标题</span></span><br><span class="line">plt.title(<span class="string">&quot;Square Numbers&quot;</span>,fontsize = <span class="number">24</span>)</span><br><span class="line"><span class="comment">#设置坐标轴标签</span></span><br><span class="line">plt.xlabel(<span class="string">&quot;Value&quot;</span>,fontsize = <span class="number">14</span>)</span><br><span class="line">plt.ylabel(<span class="string">&quot;Square of Value&quot;</span>,fontsize = <span class="number">14</span>)</span><br><span class="line"><span class="comment">#设置刻度标记的大小</span></span><br><span class="line">plt.tick_params(axis=<span class="string">&#x27;x&#x27;</span>,width=<span class="number">6</span>,labelsize = <span class="number">14</span>) </span><br><span class="line"><span class="comment"># plt.tick_params(which=&#x27;both&#x27;,width=2,colors=&#x27;gold&#x27;) </span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 参数axis的值为’x’、’y’、’both’，分别代表设置X轴、Y轴以及同时设置，默认值为’both’。 </span></span><br><span class="line"><span class="comment"># ax1.tick_params(axis=’x’,width=2,colors=’gold’) </span></span><br><span class="line"><span class="comment"># ax2.tick_params(axis=’y’,width=2,colors=’gold’) </span></span><br><span class="line"><span class="comment"># ax3.tick_params(axis=’both’,width=2,colors=’gold’) </span></span><br><span class="line"><span class="comment"># 参数which的值为 ‘major’、’minor’、’both’，分别代表设置主刻度线、副刻度线以及同时设置，默认值为’major’ （主刻度线、副刻度线类似于厘米尺。CM与MM的区别） </span></span><br><span class="line"><span class="comment"># ax1.tick_params(which=’major’,width=2,colors=’gold’) </span></span><br><span class="line"><span class="comment"># ax2.tick_params(which=’minor’,width=2,colors=’gold’) </span></span><br><span class="line"><span class="comment"># ax3.tick_params(which=’both’,width=2,colors=’gold’) </span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#打开matplotlib查看器，并显示绘制图形</span></span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+<p><img data-src="https://s2.loli.net/2023/10/18/Bhb1Q5g7oFjAIsL.png" alt="image.png"></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#绘制散点图(传如一对x和y坐标，在指定位置绘制一个点)</span></span><br><span class="line">plt.scatter(input_values,squares,s=<span class="number">200</span>)</span><br><span class="line"><span class="comment">#设置输出样式</span></span><br><span class="line">plt.scatter(<span class="number">3</span>,<span class="number">5</span>,s=<span class="number">2</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+
+<p><img data-src="https://s2.loli.net/2023/10/18/UkTwWrjB7NJ1ise.png" alt="image-1.png"></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">x_values = <span class="built_in">list</span>(<span class="built_in">range</span>(<span class="number">1</span>,<span class="number">1001</span>))</span><br><span class="line">y_values = [x**<span class="number">2</span> <span class="keyword">for</span> x <span class="keyword">in</span> x_values]</span><br><span class="line"></span><br><span class="line">plt.scatter(x_values,y_values,s=<span class="number">100</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">#设置每个坐标轴的取值范围（x轴取值，y轴取值）</span></span><br><span class="line">plt.axis([<span class="number">0</span>,<span class="number">1000</span>,<span class="number">0</span>,<span class="number">1100000</span>])</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+<p><img data-src="https://s2.loli.net/2023/10/18/U4DmYKFo6gSBRJQ.png" alt="image-2.png"></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">x_values = <span class="built_in">list</span>(<span class="built_in">range</span>(<span class="number">1</span>,<span class="number">1001</span>))</span><br><span class="line">y_values = [x**<span class="number">2</span> <span class="keyword">for</span> x <span class="keyword">in</span> x_values]</span><br><span class="line"></span><br><span class="line"><span class="comment">#matplotlib允许你给散点图中的各个点指定颜色。默认为蓝色点和黑色轮廓，在散点图包含的 数据点不多时效果很好。但绘制很多点时，黑色轮廓可能会粘连在一起。</span></span><br><span class="line"><span class="comment"># plt.scatter(x_values,y_values,s=40)</span></span><br><span class="line"><span class="comment"># plt.scatter(x_values,y_values,edgecolor=&#x27;none&#x27;, s=40)  #edgecolor=&#x27;none&#x27; 删除数据点的轮廓</span></span><br><span class="line"><span class="comment"># plt.scatter(x_values, y_values,c=&#x27;red&#x27;, edgecolor=&#x27;none&#x27;, s=40)                            </span></span><br><span class="line">plt.scatter(x_values, y_values,c=y_values,cmap=plt.cm.Blues, edgecolor=<span class="string">&#x27;none&#x27;</span>, s=<span class="number">40</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#设置每个坐标轴的取值范围</span></span><br><span class="line">plt.axis([<span class="number">0</span>,<span class="number">1100</span>,<span class="number">0</span>,<span class="number">1100000</span>])</span><br><span class="line"><span class="comment"># plt.show()</span></span><br><span class="line"><span class="comment">#参数1指定要以什么样的文件名保存图表，保存和代码的同目录下，第二个参数表示要将多余的空白区域剪掉，要保留空白区域，可省略第二个参数</span></span><br><span class="line">plt.savefig(<span class="string">&#x27;squares_plot.png&#x27;</span>)</span><br></pre></td></tr></table></figure>
+<p><img data-src="https://s2.loli.net/2023/10/18/RFD5pMIi2o4BrcS.png" alt="image-3.png"></p>
 
       
     </div>
@@ -269,7 +277,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2023/10/18/SlM_1/" class="post-title-link" itemprop="url">Lesson1 统计学习方法概论</a>
+          <a href="/2023/10/18/SlM_1/" class="post-title-link" itemprop="url">Lesson 1 概论</a>
         </h2>
 
         <div class="post-meta-container">
@@ -281,7 +289,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2023-10-18 08:00:00 / 修改时间：14:58:55" itemprop="dateCreated datePublished" datetime="2023-10-18T08:00:00+08:00">2023-10-18</time>
+      <time title="创建时间：2023-10-18 08:00:00 / 修改时间：21:42:19" itemprop="dateCreated datePublished" datetime="2023-10-18T08:00:00+08:00">2023-10-18</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -308,49 +316,115 @@
 <p>3．本书主要讨论监督学习，监督学习可以概括如下：从给定有限的训练数据出发， 假设数据是独立同分布的，而且假设模型属于某个假设空间，应用某一评价准则，从假设空间中选取一个最优的模型，使它对已给训练数据及未知测试数据在给定评价标准意义下有最准确的预测。</p>
 <p>4．统计学习中，进行模型选择或者说提高学习的泛化能力是一个重要问题。如果只考虑减少训练误差，就可能产生过拟合现象。模型选择的方法有正则化与交叉验证。学习方法泛化能力的分析是统计学习理论研究的重要课题。</p>
 <p>5．分类问题、标注问题和回归问题都是监督学习的重要问题。本书中介绍的统计学习方法包括感知机、$k$近邻法、朴素贝叶斯法、决策树、逻辑斯谛回归与最大熵模型、支持向量机、提升方法、EM算法、隐马尔可夫模型和条件随机场。这些方法是主要的分类、标注以及回归方法。它们又可以归类为生成方法与判别方法。</p>
-<h3 id="使用最小二乘法拟和曲线"><a href="#使用最小二乘法拟和曲线" class="headerlink" title="使用最小二乘法拟和曲线"></a>使用最小二乘法拟和曲线</h3><p>高斯于1823年在误差$e_1,…,e_n$独立同分布的假定下,证明了最小二乘方法的一个最优性质: 在所有无偏的线性估计类中,最小二乘方法是其中方差最小的！</p>
-<p>对于数据$(x_i, y_i)  (i&#x3D;1, 2, 3…,m)$,拟合出函数$h(x)$有误差，即残差：$$r_i&#x3D;h(x_i)-y_i$$</p>
-<p>此时$L2$范数(残差平方和)最小时，$h(x)$ 和 $y$ 相似度最高，更拟合</p>
-<p>一般的$H(x)$为$n$次的多项式，$H(x)&#x3D;w_0+w_1x+w_2x^2+…w_nx^n$,$w(w_0,w_1,w_2,…,w_n)$为参数，最小二乘法就是要找到一组 $w(w_0,w_1,w_2,…,w_n)$ ，使得$\sum_{i&#x3D;1}^n(h(x_i)-y_i)^2$ (残差平方和) 最小，即，求 $$min\sum_{i&#x3D;1}^n(h(x_i)-y_i)^2$$</p>
-<hr>
-<p>举例：我们用目标函数$y&#x3D;sin2{\pi}x$, 加上一个正态分布的噪音干扰，用多项式去拟合</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> scipy <span class="keyword">as</span> sp</span><br><span class="line"><span class="keyword">from</span> scipy.optimize <span class="keyword">import</span> leastsq  <span class="comment"># 最小二乘</span></span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt     <span class="comment"># 绘图</span></span><br><span class="line"><span class="comment"># matplotlib inline</span></span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2023/10/18/SlM_1/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
 
-<ul>
-<li>ps: numpy.poly1d([1,2,3])  生成  $1x^2+2x^1+3x^0$</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 目标函数</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">real_func</span>(<span class="params">x</span>):</span><br><span class="line">    <span class="keyword">return</span> np.sin(<span class="number">2</span>*np.pi*x)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 多项式</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">fit_func</span>(<span class="params">p, x</span>):</span><br><span class="line">    f = np.poly1d(p)</span><br><span class="line">    <span class="keyword">return</span> f(x)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 残差</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">residuals_func</span>(<span class="params">p, x, y</span>):</span><br><span class="line">    ret = fit_func(p, x) - y</span><br><span class="line">    <span class="keyword">return</span> ret</span><br><span class="line"></span><br><span class="line">x = np.linspace(<span class="number">0</span>, <span class="number">1</span>, <span class="number">10</span>)</span><br><span class="line">y_ = np.sin(<span class="number">2</span>*np.pi*x)</span><br><span class="line">y1 = [np.random.normal(<span class="number">0</span>, <span class="number">0.1</span>) + y1 <span class="keyword">for</span> y1 <span class="keyword">in</span> y_]</span><br><span class="line">y2 = [ y1 <span class="keyword">for</span> y1 <span class="keyword">in</span> y_]</span><br><span class="line"><span class="built_in">print</span>(y1)</span><br><span class="line"><span class="built_in">print</span>(y2)</span><br><span class="line">plt.plot(x,y1)</span><br><span class="line">plt.plot(x,y2)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+    
+    
+    
 
-<p><img data-src="https://s2.loli.net/2023/10/18/GfT8K6hQBmHAcM5.png" alt="image.png"></p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 十个点</span></span><br><span class="line">x = np.linspace(<span class="number">0</span>, <span class="number">1</span>, <span class="number">10</span>)</span><br><span class="line">x_points = np.linspace(<span class="number">0</span>, <span class="number">1</span>, <span class="number">1000</span>)</span><br><span class="line"><span class="comment"># 加上正态分布噪音的目标函数的值</span></span><br><span class="line">y_ = real_func(x)</span><br><span class="line">y = [np.random.normal(<span class="number">0</span>, <span class="number">0.1</span>) + y1 <span class="keyword">for</span> y1 <span class="keyword">in</span> y_]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">fitting</span>(<span class="params">M=<span class="number">0</span></span>):</span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    M    为 多项式的次数</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    <span class="comment"># 随机初始化多项式参数</span></span><br><span class="line">    p_init = np.random.rand(M + <span class="number">1</span>)</span><br><span class="line">    <span class="comment"># 最小二乘法</span></span><br><span class="line">    p_lsq = leastsq(residuals_func, p_init, args=(x, y))</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;Fitting Parameters:&#x27;</span>, p_lsq[<span class="number">0</span>])</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 可视化</span></span><br><span class="line">    plt.plot(x_points, real_func(x_points), label=<span class="string">&#x27;real&#x27;</span>)</span><br><span class="line">    plt.plot(x_points, fit_func(p_lsq[<span class="number">0</span>], x_points), label=<span class="string">&#x27;fitted curve&#x27;</span>)</span><br><span class="line">    plt.plot(x, y, <span class="string">&#x27;bo&#x27;</span>, label=<span class="string">&#x27;noise&#x27;</span>)</span><br><span class="line">    plt.legend()</span><br><span class="line">    <span class="keyword">return</span> p_lsq</span><br></pre></td></tr></table></figure>
-
-<h3 id="M-0"><a href="#M-0" class="headerlink" title="M&#x3D;0"></a>M&#x3D;0</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># M=0</span></span><br><span class="line">p_lsq_0 = fitting(M=<span class="number">0</span>)</span><br></pre></td></tr></table></figure>
-<p><img data-src="https://s2.loli.net/2023/10/18/OWDwGRA4YtXm9yU.png" alt="image-1.png"></p>
-<h3 id="M-1"><a href="#M-1" class="headerlink" title="M&#x3D;1"></a>M&#x3D;1</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># M=1</span></span><br><span class="line">p_lsq_1 = fitting(M=<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
-<p><img data-src="https://s2.loli.net/2023/10/18/XBKzWmtC9edaLAE.png" alt="image-2.png"></p>
-<h3 id="M-3"><a href="#M-3" class="headerlink" title="M&#x3D;3"></a>M&#x3D;3</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># M=3</span></span><br><span class="line">p_lsq_3 = fitting(M=<span class="number">3</span>)</span><br></pre></td></tr></table></figure>
-<p><img data-src="https://s2.loli.net/2023/10/18/K6nDFuohvmMqeUc.png" alt="image-3.png"></p>
-<h3 id="M-9"><a href="#M-9" class="headerlink" title="M&#x3D;9"></a>M&#x3D;9</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># M=9</span></span><br><span class="line">p_lsq_9 = fitting(M=<span class="number">9</span>)</span><br></pre></td></tr></table></figure>
-<p><img data-src="https://s2.loli.net/2023/10/18/YH6sXzh53CDGvad.png" alt="image-4.png"></p>
-<p>当M&#x3D;9时，多项式曲线通过了每个数据点，但是造成了过拟合</p>
-<h3 id="正则化"><a href="#正则化" class="headerlink" title="正则化"></a>正则化</h3><p>结果显示过拟合， 引入正则化项(regularizer)，降低过拟合</p>
-<p>$Q(x)&#x3D;\sum_{i&#x3D;1}^n(h(x_i)-y_i)^2+\lambda||w||^2$。</p>
-<p>回归问题中，损失函数是平方损失，正则化可以是参数向量的L2范数,也可以是L1范数。</p>
-<ul>
-<li><p>L1: regularization*abs(p)</p>
-</li>
-<li><p>L2: 0.5 * regularization * np.square(p)</p>
-</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">regularization = <span class="number">0.0001</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">residuals_func_regularization</span>(<span class="params">p, x, y</span>):</span><br><span class="line">    ret = fit_func(p, x) - y</span><br><span class="line">    ret = np.append(ret,</span><br><span class="line">                    np.sqrt(<span class="number">0.5</span> * regularization * np.square(p)))  <span class="comment"># L2范数作为正则化项</span></span><br><span class="line">    <span class="keyword">return</span> ret</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">regularization = <span class="number">0.0001</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">residuals_func_regularization</span>(<span class="params">p, x, y</span>):</span><br><span class="line">    ret = fit_func(p, x) - y</span><br><span class="line">    ret = np.append(ret,</span><br><span class="line">                    regularization*np.<span class="built_in">abs</span>(p)) <span class="comment"># L2范数作为正则化项</span></span><br><span class="line">    <span class="keyword">return</span> ret</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 最小二乘法,加正则化项</span></span><br><span class="line">p_init = np.random.rand(<span class="number">9</span> + <span class="number">1</span>)</span><br><span class="line">p_lsq_regularization = leastsq(</span><br><span class="line">    residuals_func_regularization, p_init, args=(x, y))</span><br><span class="line"></span><br><span class="line">plt.plot(x_points, real_func(x_points), label=<span class="string">&#x27;real&#x27;</span>)</span><br><span class="line">plt.plot(x_points, fit_func(p_lsq_9[<span class="number">0</span>], x_points), label=<span class="string">&#x27;fitted curve&#x27;</span>)</span><br><span class="line">plt.plot(x_points,fit_func(p_lsq_regularization[<span class="number">0</span>], x_points),</span><br><span class="line">    label=<span class="string">&#x27;regularization&#x27;</span>)</span><br><span class="line">plt.plot(x, y, <span class="string">&#x27;bo&#x27;</span>, label=<span class="string">&#x27;noise&#x27;</span>)</span><br><span class="line">plt.legend()</span><br></pre></td></tr></table></figure>
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
 
 
-<p><img data-src="https://s2.loli.net/2023/10/18/S8DquaKpy1Xt7dz.png" alt="image-5.png"></p>
 
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2023/10/18/SLM_2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="John Hu">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小胡说事">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | 小胡说事">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2023/10/18/SLM_2/" class="post-title-link" itemprop="url">Lesson 2 感知机</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2023-10-18 08:00:00" itemprop="dateCreated datePublished" datetime="2023-10-18T08:00:00+08:00">2023-10-18</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2023-10-19 11:21:47" itemprop="dateModified" datetime="2023-10-19T11:21:47+08:00">2023-10-19</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Note/" itemprop="url" rel="index"><span itemprop="name">Note</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>1．感知机是根据输入实例的特征向量$x$对其进行二类分类的线性分类模型：</p>
+<p>$$<br>f(x)&#x3D;\operatorname{sign}(w \cdot x+b)<br>$$</p>
+<p>感知机模型对应于输入空间（特征空间）中的分离超平面 $w \cdot x+b&#x3D;0$。</p>
+<p>2．感知机学习的策略是极小化损失函数：</p>
+<p>$$<br>\min <em>{w, b} L(w, b)&#x3D;-\sum</em>{x_{i} \in M} y_{i}\left(w \cdot x_{i}+b\right)<br>$$</p>
+<p>损失函数对应于误分类点到分离超平面的总距离。</p>
+<p>3．感知机学习算法是基于随机梯度下降法的对损失函数的最优化算法，有原始形式和对偶形式。算法简单且易于实现。原始形式中，首先任意选取一个超平面，然后用梯度下降法不断极小化目标函数。在这个过程中一次随机选取一个误分类点使其梯度下降。</p>
+<p>4．当训练数据集线性可分时，感知机学习算法是收敛的。感知机算法在训练数据集上的误分类次数$k$满足不等式：</p>
+<p>$$<br>k \leqslant\left(\frac{R}{\gamma}\right)^{2}<br>$$</p>
+<p>当训练数据集线性可分时，感知机学习算法存在无穷多个解，其解由于不同的初值或不同的迭代顺序而可能有所不同。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2023/10/18/SLM_2/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -1038,100 +1112,6 @@ $$\left \lbrace
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2020/05/15/SH-Jiangpu-Park/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/15/Skill/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="John Hu">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="小胡说事">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | 小胡说事">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2020/05/15/Skill/" class="post-title-link" itemprop="url">六个不为人知的奇技淫巧，真得劲！</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2020-05-15 07:00:00" itemprop="dateCreated datePublished" datetime="2020-05-15T07:00:00+08:00">2020-05-15</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2020-06-09 20:00:35" itemprop="dateModified" datetime="2020-06-09T20:00:35+08:00">2020-06-09</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/Share/" itemprop="url" rel="index"><span itemprop="name">Share</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <img data-src="https://i.loli.net/2020/05/15/AE1PJYCcRZoUvhz.png" alt="jq01.png" style="zoom:50%;" />
-
-<p>给大家分享几个非常实用的电脑小技巧。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/05/15/Skill/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
